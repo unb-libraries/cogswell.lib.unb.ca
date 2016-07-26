@@ -1,0 +1,20 @@
+uuid: c7062de9-6fb8-4925-9bde-428f7449a05a
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.media_gallery_rows
+field_name: media_gallery_rows
+entity_type: taxonomy_term
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

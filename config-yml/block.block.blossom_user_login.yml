@@ -1,0 +1,20 @@
+uuid: 76517021-d0bd-44b2-b9e0-ad50fcd08256
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - blossom
+id: blossom_user_login
+theme: blossom
+region: content
+weight: 10
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 92fd711e-f4b6-4c5a-aabb-e02267062a8f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - blossom
+id: blossom_search_form
+theme: blossom
+region: content
+weight: -10
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  provider: search
+  label_display: '0'
+visibility: {  }

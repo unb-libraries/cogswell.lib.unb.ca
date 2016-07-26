@@ -1,0 +1,23 @@
+uuid: bde8598c-d028-49c1-b82f-82d9cc8c71db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.media_gallery_allow_download
+    - node.type.media_gallery
+id: node.media_gallery.media_gallery_allow_download
+field_name: media_gallery_allow_download
+entity_type: node
+bundle: media_gallery
+label: 'Allow downloading of the original image'
+description: 'Display a "download original image" link'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

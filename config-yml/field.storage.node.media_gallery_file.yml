@@ -1,0 +1,23 @@
+uuid: 1ac92cf5-8be6-40b6-8a6d-c3805c0a3a62
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.media_gallery_file
+field_name: media_gallery_file
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

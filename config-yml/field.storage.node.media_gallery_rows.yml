@@ -1,0 +1,20 @@
+uuid: 01f611d4-0c4c-40e2-b504-e654dbaa8fc2
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+id: node.media_gallery_rows
+field_name: media_gallery_rows
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

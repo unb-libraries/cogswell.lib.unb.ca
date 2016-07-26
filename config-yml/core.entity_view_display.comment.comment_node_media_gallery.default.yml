@@ -1,0 +1,23 @@
+uuid: c689ed11-f5fd-4752-8385-4099440c1128
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_media_gallery
+    - field.field.comment.comment_node_media_gallery.comment_body
+  module:
+    - text
+id: comment.comment_node_media_gallery.default
+targetEntityType: comment
+bundle: comment_node_media_gallery
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

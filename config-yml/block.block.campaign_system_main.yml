@@ -1,22 +1,20 @@
-uuid: 9b204112-accc-445f-a266-5d18abb7e298
+uuid: d722dbe2-8aae-447b-bbd1-2da37811fab4
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-_core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
-id: bartik_content
-theme: bartik
+    - campaign
+id: campaign_system_main
+theme: campaign
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: ''
   provider: system
   label_display: '0'
 visibility: {  }

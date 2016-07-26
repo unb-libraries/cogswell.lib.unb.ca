@@ -1,0 +1,27 @@
+uuid: b59db0a8-f21d-4e36-9b32-2b5a3a1e8773
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3at2K-ms6JKCoUvAqI2Uie-fwPwt8F2XbLC4Kdj_U_I
+id: upgrade_d7_image_settings
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Image configuration'
+source:
+  plugin: variable
+  variables:
+    - allow_insecure_derivatives
+    - suppress_itok_output
+    - image_style_preview_image
+process:
+  suppress_itok_output: suppress_itok_output
+  allow_insecure_derivatives: allow_insecure_derivatives
+  preview_image: image_style_preview_image
+destination:
+  plugin: config
+  config_name: image.settings
+migration_dependencies:
+  required: {  }
+  optional: {  }

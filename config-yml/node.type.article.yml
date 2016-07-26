@@ -1,0 +1,11 @@
+uuid: 71220133-7e86-4aeb-b85a-3123fc413bed
+langcode: en
+status: true
+dependencies: {  }
+name: 'News item'
+type: article
+description: 'Use <em>news items</em> for time-specific content like press releases or announcements.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

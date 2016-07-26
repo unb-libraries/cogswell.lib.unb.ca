@@ -1,0 +1,23 @@
+uuid: 57bf223b-13ce-4aef-adbf-b970e29b8e7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.media_gallery_format
+    - node.type.media_gallery
+  module:
+    - options
+id: node.media_gallery.media_gallery_format
+field_name: media_gallery_format
+entity_type: node
+bundle: media_gallery
+label: 'Gallery format'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: lightbox
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,11 @@
+uuid: de63a299-3b33-4b5c-975d-6f510539196d
+langcode: en
+status: true
+dependencies: {  }
+name: Gallery
+type: media_gallery
+description: 'A flexible gallery of media.'
+help: 'Create a gallery of thumbnails including custom display settings.  Once your gallery is saved, your media can be added.'
+new_revision: false
+preview_mode: 1
+display_submitted: false

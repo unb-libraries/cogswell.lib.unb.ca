@@ -1,0 +1,20 @@
+uuid: 8e6ac88d-af96-4ba5-8c88-dc13492d3708
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - acq_cogswellminimal
+id: acq_cogswellminimal_search_form
+theme: acq_cogswellminimal
+region: content
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  provider: search
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: 497410c6-2d5f-4364-ac62-37a3b1d28f0f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b5CNK_Wa576yPQq1tGxAp8nV34K-0q9Ivhmd680jqwE
+id: upgrade_d7_custom_block
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Custom blocks'
+source:
+  plugin: d7_block_custom
+  constants:
+    type: basic
+process:
+  id: bid
+  type: constants/type
+  info: info
+  body/format:
+    plugin: migration
+    migration: upgrade_d7_filter_format
+    source: format
+  body/value: body
+destination:
+  plugin: 'entity:block_content'
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d7_filter_format
+    - upgrade_block_content_body_field
+  optional: {  }

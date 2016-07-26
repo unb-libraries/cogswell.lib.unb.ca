@@ -1,0 +1,27 @@
+uuid: 7faf3389-c88c-46bb-b346-6b82c611caca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.media_gallery_file
+    - node.type.media_gallery
+  module:
+    - file
+id: node.media_gallery.media_gallery_file
+field_name: media_gallery_file
+entity_type: node
+bundle: media_gallery
+label: 'Gallery media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: txt
+  file_directory: ''
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

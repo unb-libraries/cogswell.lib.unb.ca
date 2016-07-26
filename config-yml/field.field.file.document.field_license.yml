@@ -1,0 +1,23 @@
+uuid: c98f80a8-9c1b-4bf8-9af9-95df906c1f9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_license
+  module:
+    - file
+    - options
+id: file.document.field_license
+field_name: field_license
+entity_type: file
+bundle: document
+label: 'License settings for this file'
+description: 'Select a <a href="http://creativecommons.org" target="_new">Creative Commons</a> license for others who use this file.'
+required: true
+translatable: true
+default_value:
+  -
+    value: nothing
+default_value_callback: ''
+settings: {  }
+field_type: list_string

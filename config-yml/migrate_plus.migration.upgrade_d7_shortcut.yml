@@ -1,0 +1,34 @@
+uuid: 9da6f2d0-79e6-4285-a671-e1a5dfb95ef7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: d6FWIYRmWMa0q2dCy45Z7jATd78L03G6IpVv2smjLyw
+id: upgrade_d7_shortcut
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Shortcut links'
+source:
+  plugin: d7_shortcut
+  constants:
+    uri_scheme: 'internal:/'
+process:
+  shortcut_set:
+    plugin: migration
+    migration: upgrade_d7_shortcut_set
+    source: menu_name
+  title: link_title
+  weight: weight
+  link:
+    plugin: concat
+    source:
+      - constants/uri_scheme
+      - link_path
+destination:
+  plugin: 'entity:shortcut'
+migration_dependencies:
+  required:
+    - upgrade_d7_shortcut_set
+    - upgrade_menu_links
+  optional: {  }

@@ -1,0 +1,21 @@
+uuid: 7aee9fd4-2d6e-47fa-955a-9452802465fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.media_title
+  module:
+    - file
+    - text
+id: file.video.media_title
+field_name: media_title
+entity_type: file
+bundle: video
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

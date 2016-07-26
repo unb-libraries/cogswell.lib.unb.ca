@@ -5,12 +5,17 @@ dependencies: {  }
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Anonymous user'
+label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access content'
-  - 'use text format restricted_html'
   - 'access comments'
+  - 'access content'
   - 'access site-wide contact form'
+  - 'post comments'
+  - 'save draft'
   - 'search content'
+  - 'subscribe to comments'
+  - 'use text format filtered_html'
+  - 'view addthis'
+  - 'view files'

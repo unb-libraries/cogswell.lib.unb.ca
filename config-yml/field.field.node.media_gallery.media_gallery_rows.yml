@@ -1,0 +1,25 @@
+uuid: 26d174b6-8b67-4b3c-93b4-6dd619f6a6bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.media_gallery_rows
+    - node.type.media_gallery
+id: node.media_gallery.media_gallery_rows
+field_name: media_gallery_rows
+entity_type: node
+bundle: media_gallery
+label: 'Number of rows'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,23 @@
+uuid: 2a387b4d-6b2a-4917-a7cb-74cff3a69bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.media_gallery_expose_block
+    - node.type.media_gallery
+id: node.media_gallery.media_gallery_expose_block
+field_name: media_gallery_expose_block
+entity_type: node
+bundle: media_gallery
+label: 'Create a block of most recently added media'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

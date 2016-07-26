@@ -1,0 +1,46 @@
+uuid: 3b837c35-3c4d-4f9f-81eb-42864120abd7
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BfZgLDH_zluoE8koDHkDsN4iUXzQCVeK3g-MDkZzZw8
+id: upgrade_d7_node_revision_poll
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Node revisions (Poll)'
+source:
+  plugin: d7_node_revision
+  node_type: poll
+process:
+  nid: nid
+  vid: vid
+  type: type
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_tags:
+    plugin: iterator
+    source: field_tags
+    process:
+      target_id: tid
+destination:
+  plugin: 'entity_revision:node'
+migration_dependencies:
+  required:
+    53: upgrade_d7_node_article
+    54: upgrade_d7_node_media_gallery
+    55: upgrade_d7_node_page
+    56: upgrade_d7_node_poll
+  optional: {  }
