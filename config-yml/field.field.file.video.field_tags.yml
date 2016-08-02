@@ -1,0 +1,22 @@
+uuid: 8851cf81-4a89-465a-8183-ba0d2e7970a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_tags
+  module:
+    - file
+id: file.video.field_tags
+field_name: field_tags
+entity_type: file
+bundle: video
+label: Tags
+description: 'Enter a comma-separated list of words to describe your video.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

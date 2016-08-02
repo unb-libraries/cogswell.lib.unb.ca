@@ -1,0 +1,9 @@
+uuid: 4097deea-d2e2-4895-87b8-bb913d923c17
+langcode: en
+status: true
+dependencies: {  }
+name: 'Gallery collections'
+vid: gallery_collections
+description: 'Groups of rich media galleries'
+hierarchy: 0
+weight: 0

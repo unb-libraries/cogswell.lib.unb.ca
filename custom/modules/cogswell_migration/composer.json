@@ -1,0 +1,14 @@
+{
+  "name": "drupal/cogswell_migration",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/cogswell_migration",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/cogswell_migration",
+    "source": "http://cgit.drupalcode.org/cogswell_migration"
+  },
+  "require": { }
+}

@@ -1,0 +1,29 @@
+uuid: bdc174d1-e980-492e-907c-dbfae4432e6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.comments_recent
+  module:
+    - system
+    - views
+  theme:
+    - campaign
+id: campaign_comment_recent
+theme: campaign
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:comments_recent-block_1'
+settings:
+  id: 'views_block:comments_recent-block_1'
+  label: Comments
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\n/blog\n/blog/*\n/forum\n/forum/*"

@@ -1,0 +1,21 @@
+uuid: 8482e463-84d7-4ca8-8782-39892213b7c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.media_title
+  module:
+    - file
+    - text
+id: file.default.media_title
+field_name: media_title
+entity_type: file
+bundle: default
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

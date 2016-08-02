@@ -1,0 +1,21 @@
+uuid: b3dbf090-fc6d-4d85-8a78-b230a0c6a960
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.media_gallery_image_info_where
+field_name: media_gallery_image_info_where
+entity_type: node
+type: list_string
+settings:
+  allowed_values_function: _media_gallery_get_image_info_placement_values
+  allowed_values: {  }
+module: options
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

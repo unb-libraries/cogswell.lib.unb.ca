@@ -1,0 +1,32 @@
+uuid: 410c0e68-ac40-4a50-a2c5-80a89037994e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bthDfJR1terLRHQWUBztHkC2l4CKDpqN1DeVrx7ouS8
+id: upgrade_d7_url_alias
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'URL aliases'
+source:
+  plugin: d7_url_alias
+  constants:
+    slash: /
+process:
+  source:
+    plugin: concat
+    source:
+      - constants/slash
+      - source
+  alias:
+    plugin: concat
+    source:
+      - constants/slash
+      - alias
+  langcode: language
+destination:
+  plugin: url_alias
+migration_dependencies:
+  required: {  }
+  optional: {  }

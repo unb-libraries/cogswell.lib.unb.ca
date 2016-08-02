@@ -1,0 +1,46 @@
+uuid: 41df9857-b0fc-41c5-88cf-48252a993778
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hGJ0bhoHJEs2YXxNKpxTeagvbyqFtKaMO89b99VuXr4
+id: upgrade_d7_node_article
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Nodes (News item)'
+source:
+  plugin: d7_node
+  node_type: article
+process:
+  nid: nid
+  vid: vid
+  type: type
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  body: body
+  field_tags:
+    plugin: iterator
+    source: field_tags
+    process:
+      target_id: tid
+destination:
+  plugin: 'entity:node'
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance

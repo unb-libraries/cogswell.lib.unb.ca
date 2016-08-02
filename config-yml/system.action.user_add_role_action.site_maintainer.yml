@@ -1,0 +1,14 @@
+uuid: 61b0407c-06f9-4168-aaed-1537e94f55c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.site_maintainer
+  module:
+    - user
+id: user_add_role_action.site_maintainer
+label: 'Add the site maintainer role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: site_maintainer

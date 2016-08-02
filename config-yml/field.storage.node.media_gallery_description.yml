@@ -1,0 +1,19 @@
+uuid: 98d5a043-0e11-44ad-b005-a9b66f0e55c4
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.media_gallery_description
+field_name: media_gallery_description
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

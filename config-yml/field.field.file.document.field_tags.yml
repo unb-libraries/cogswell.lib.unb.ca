@@ -1,0 +1,22 @@
+uuid: aa62f128-9c90-41fa-99c3-7c5b458c633d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_tags
+  module:
+    - file
+id: file.document.field_tags
+field_name: field_tags
+entity_type: file
+bundle: document
+label: Tags
+description: 'Enter a comma-separated list of words to describe your file.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

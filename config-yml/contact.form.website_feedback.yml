@@ -1,0 +1,10 @@
+uuid: 7aa51fec-b3b3-498a-80dc-c93b7b1c9aea
+langcode: en
+status: true
+dependencies: {  }
+id: website_feedback
+label: 'Website feedback'
+recipients:
+  - knowlton@stu.ca
+reply: ''
+weight: 0

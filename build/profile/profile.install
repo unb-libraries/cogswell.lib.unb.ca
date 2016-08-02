@@ -17,6 +17,5 @@ function PROFILE_SLUG_install() {
 
   // If importing config, avoid issue mentioned in https://www.drupal.org/node/2583113.
   // Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();
-
   // Can add code in here to make nodes, terms, etc.
 }

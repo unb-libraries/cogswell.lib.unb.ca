@@ -1,0 +1,20 @@
+uuid: 2a06656e-a4d0-4a28-b78d-318ed8fbabad
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acq_cogswellminimal
+id: acq_cogswellminimal_system_main
+theme: acq_cogswellminimal
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

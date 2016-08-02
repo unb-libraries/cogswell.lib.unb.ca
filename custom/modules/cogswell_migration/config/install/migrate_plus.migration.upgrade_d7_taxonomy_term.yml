@@ -1,0 +1,31 @@
+uuid: e05290a3-9235-4b24-bd39-bd5c6610c085
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d7_taxonomy_term
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms'
+source:
+  plugin: taxonomy_term
+process:
+  tid: tid
+  vid:
+    plugin: migration
+    migration: upgrade_d7_taxonomy_vocabulary
+    source: vid
+  name: name
+  description: description
+  weight: weight
+  parent:
+    plugin: migration
+    migration: upgrade_d7_taxonomy_term
+    source: parent
+  changed: timestamp
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies:
+  required:
+    - upgrade_d7_taxonomy_vocabulary
+  optional: {  }

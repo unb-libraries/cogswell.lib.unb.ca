@@ -1,0 +1,23 @@
+uuid: 755052ca-8bbd-4ed4-8d24-c1a04866daf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_license
+    - taxonomy.vocabulary.gallery_collections
+  module:
+    - options
+id: taxonomy_term.gallery_collections.field_license
+field_name: field_license
+entity_type: taxonomy_term
+bundle: gallery_collections
+label: 'Default license settings'
+description: 'Choose a default <a href="http://creativecommons.org">Creative Commons</a> license for all Gallery media. Later you can change the license for each piece of media.'
+required: true
+translatable: true
+default_value:
+  -
+    value: nothing
+default_value_callback: ''
+settings: {  }
+field_type: list_string

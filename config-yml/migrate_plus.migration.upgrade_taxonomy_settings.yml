@@ -1,0 +1,26 @@
+uuid: 21416ae9-ca31-4de9-927a-84bdc9c42baf
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BlEK1YzGsK26ribep-qZjzK-KeWEhiAIacEbK8L54As
+id: upgrade_taxonomy_settings
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Taxonomy configuration'
+source:
+  plugin: variable
+  variables:
+    - taxonomy_override_selector
+    - taxonomy_terms_per_page_admin
+process:
+  override_selector: taxonomy_override_selector
+  terms_per_page_admin: taxonomy_terms_per_page_admin
+destination:
+  plugin: config
+  config_name: taxonomy.settings
+migration_dependencies:
+  required: {  }
+  optional: {  }

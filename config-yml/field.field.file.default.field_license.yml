@@ -1,0 +1,23 @@
+uuid: 3872d726-1624-42e1-97d0-1eb83779e24b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.field_license
+  module:
+    - file
+    - options
+id: file.default.field_license
+field_name: field_license
+entity_type: file
+bundle: default
+label: 'License settings for this file'
+description: 'Select a <a href="http://creativecommons.org" target="_new">Creative Commons</a> license for others who use this file.'
+required: true
+translatable: true
+default_value:
+  -
+    value: nothing
+default_value_callback: ''
+settings: {  }
+field_type: list_string

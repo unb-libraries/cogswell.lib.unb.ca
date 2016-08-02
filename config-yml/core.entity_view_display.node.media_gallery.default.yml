@@ -1,0 +1,45 @@
+uuid: 8b6f3404-25d2-4508-afce-0820a2c7df63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.media_gallery.comment_node_media_gallery
+    - field.field.node.media_gallery.media_gallery_allow_download
+    - field.field.node.media_gallery.media_gallery_block_rows
+    - field.field.node.media_gallery.media_gallery_collection
+    - field.field.node.media_gallery.media_gallery_description
+    - field.field.node.media_gallery.media_gallery_expose_block
+    - field.field.node.media_gallery.media_gallery_file
+    - field.field.node.media_gallery.media_gallery_format
+    - field.field.node.media_gallery.media_gallery_image_info_where
+    - field.field.node.media_gallery.media_gallery_lightbox_extras
+    - field.field.node.media_gallery.media_gallery_rows
+    - node.type.media_gallery
+  module:
+    - comment
+    - user
+id: node.media_gallery.default
+targetEntityType: node
+bundle: media_gallery
+mode: default
+content:
+  comment_node_media_gallery:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      pager_id: 0
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  media_gallery_allow_download: true
+  media_gallery_block_rows: true
+  media_gallery_collection: true
+  media_gallery_description: true
+  media_gallery_expose_block: true
+  media_gallery_file: true
+  media_gallery_format: true
+  media_gallery_image_info_where: true
+  media_gallery_lightbox_extras: true
+  media_gallery_rows: true

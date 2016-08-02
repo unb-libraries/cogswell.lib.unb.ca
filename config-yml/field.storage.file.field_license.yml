@@ -1,0 +1,21 @@
+uuid: d0214f97-3617-4431-9385-d542daff5b12
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - options
+id: file.field_license
+field_name: field_license
+entity_type: file
+type: list_string
+settings:
+  allowed_values_function: _media_gallery_get_field_license_values
+  allowed_values: {  }
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

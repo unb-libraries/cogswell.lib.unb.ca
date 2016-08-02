@@ -1,0 +1,21 @@
+uuid: 0a99ced4-c756-46d1-8d75-9b0a51485d6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.file.media_description
+  module:
+    - file
+    - text
+id: file.document.media_description
+field_name: media_description
+entity_type: file
+bundle: document
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

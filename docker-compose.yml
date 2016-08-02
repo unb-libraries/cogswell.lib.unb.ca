@@ -24,3 +24,12 @@ services:
       - ./custom/themes:/app/themes/custom
       - ./tests/behat.yml:/tmp/drupal_build/behat.yml
       - ./tests/features:/tmp/drupal_build/features
+
+  mysqlimport:
+    image: mysql
+    expose:
+     - "3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: datadump
+    volumes:
+      - /Users/cvillami/db_dumps/:/docker-entrypoint-initdb.d

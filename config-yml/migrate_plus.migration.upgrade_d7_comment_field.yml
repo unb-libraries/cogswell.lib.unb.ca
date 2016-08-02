@@ -1,0 +1,27 @@
+uuid: bed482db-c788-4239-b984-e1f9b976be1d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8i1XD78yDBLgCuFrFnw83kiZkgVz1JRE0LA4Qwmbwrs
+id: upgrade_d7_comment_field
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Comment field configuration'
+source:
+  plugin: d7_comment_type
+  constants:
+    entity_type: node
+    type: comment
+process:
+  entity_type: constants/entity_type
+  field_name: bundle
+  type: constants/type
+  settings/comment_type: bundle
+destination:
+  plugin: 'entity:field_storage_config'
+migration_dependencies:
+  required:
+    - upgrade_d7_comment_type
+  optional: {  }

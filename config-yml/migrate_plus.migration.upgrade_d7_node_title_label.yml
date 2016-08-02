@@ -1,0 +1,27 @@
+uuid: 32e6c1b5-a33a-4e95-9937-c36748621cdb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BhLtlzgwySg2_p26rJsHjw9tHvgumC8PiqhaYW5yNZM
+id: upgrade_d7_node_title_label
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Node title label'
+source:
+  plugin: d7_node_type
+  constants:
+    entity_type: node
+    field_name: title
+process:
+  entity_type: constants/entity_type
+  bundle: type
+  field_name: constants/field_name
+  label: title_label
+destination:
+  plugin: 'entity:base_field_override'
+migration_dependencies:
+  required:
+    - upgrade_d7_node_type
+  optional: {  }

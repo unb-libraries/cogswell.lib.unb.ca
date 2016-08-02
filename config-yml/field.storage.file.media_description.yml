@@ -1,0 +1,19 @@
+uuid: 13c699cf-1f93-415c-a891-d0b7fb64eb9b
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - text
+id: file.media_description
+field_name: media_description
+entity_type: file
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

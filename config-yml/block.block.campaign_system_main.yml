@@ -1,0 +1,20 @@
+uuid: 7dea53dd-a2aa-4e84-9dd1-389b9e1e7121
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - campaign
+id: campaign_system_main
+theme: campaign
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }
