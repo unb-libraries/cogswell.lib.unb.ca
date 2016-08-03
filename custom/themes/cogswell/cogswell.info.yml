@@ -1,5 +1,5 @@
 # Sub-theme of drupal8_zymphonies_theme.
-name: Loyalist Research Network
+name: Cogswell Theme
 type: theme
 description: 'For Cogswell site. Sub-themed from drupal8_zymphonies_theme.'
 base theme: drupal8_zymphonies_theme
@@ -32,5 +32,3 @@ regions:
   footer_menu: 'Footer Menu'
   google_map: 'Google Map'
   auto_hidden_block: 'Auto hidden blocks'
-
-  
