@@ -1,5 +1,6 @@
 /* Custom CSS */
 
-a:hover {
-  text-decoration: none;
+.js-quickedit-page-title h1 {
+  text-decoration: bold !important;
+  color: blue !important;
 }
