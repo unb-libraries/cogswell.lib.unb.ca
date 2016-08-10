@@ -1,5 +1,0 @@
-global-styling:
-  version: 8.x-1.0+0-dev
-  css:
-    base:
-      css/cogswell.css: {}
