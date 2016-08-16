@@ -1,6 +1,7 @@
 /* global variables */
 :root {
   --cog-orange:       #FF7800;
+  --cog-dark-orange:  #803c00;
 }
 
 /* main menu text */
@@ -44,15 +45,15 @@
   background: var(--cog-orange);
 }
 
-/* Match <Search> header to main menu */
-.sidebar h2 {
-  padding: 12px 14px;
-  color: white;
-  text-transform: none;;
-  font-size: 1.024em;
+/* re-color links on hover, focus, etc */
+a:hover {
+  color: var(--cog-orange);
 }
 
-/* re-color links on hover, focus, etc */
+.sidebar ul.menu li.menu-item--active-trail > a {
+    color: var(--cog-orange);
+}
+
 #main .content a:hover {
     color: var(--cog-orange);
 }
