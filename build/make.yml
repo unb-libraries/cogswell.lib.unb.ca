@@ -30,3 +30,12 @@ projects:
   zircon:
     type: theme
     version: "1.0-rc1"
+
+# Libraries.
+
+libraries:
+  jquery.cycle:
+    type: 'libraries'
+    download:
+      type: 'file'
+      url: 'https://raw.github.com/malsup/cycle/master/jquery.cycle.all.js'
