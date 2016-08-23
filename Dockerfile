@@ -1,6 +1,10 @@
 FROM unblibraries/drupal:alpine-nginx-php7-8.x
 MAINTAINER Jacob Sanford <jsanford@unb.ca>
 
+LABEL name="cogswell.lib.unb.ca"
+LABEL vcs-ref=""
+LABEL vcs-url="https://github.com/unb-libraries/cogswell.lib.unb.ca"
+
 # Universal environment variables.
 ENV DEPLOY_ENV prod
 ENV DRUPAL_DEPLOY_CONFIGURATION TRUE
