@@ -5,6 +5,8 @@ LABEL name="cogswell.lib.unb.ca"
 LABEL vcs-ref=""
 LABEL vcs-url="https://github.com/unb-libraries/cogswell.lib.unb.ca"
 
+ARG COMPOSER_DEPLOY_DEV=no-dev
+
 # Universal environment variables.
 ENV DEPLOY_ENV prod
 ENV DRUPAL_DEPLOY_CONFIGURATION TRUE
