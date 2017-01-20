@@ -17,7 +17,7 @@ projects:
   inline_entity_form:
     version: '1.0-alpha6'
   views_slideshow:
-    version: '4.1'
+    version: '4.2'
 
 # Additional themes.
 
