@@ -72,7 +72,7 @@
         "drupal/features": "3.1",
         "drupal/inline_entity_form": "1.0-alpha6",
         "drupal/views_slideshow": "4.3",
-        "drupal/zircon": "0.2",
+        "drupal/zircon": "1.0-rc1",
         "drush/drush": "~8.0"
     },
     "require-dev": {
