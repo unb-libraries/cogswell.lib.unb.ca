@@ -18,7 +18,7 @@ services:
     restart: always
     container_name: cogswell.lib.unb.ca
     expose:
-     - "80"
+      - "80"
     ports:
       - "3086:80"
     env_file:
