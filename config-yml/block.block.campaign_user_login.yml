@@ -1,0 +1,20 @@
+uuid: 22eba7fe-5f8f-4eb2-ae21-cf1d811e8b06
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - campaign
+id: campaign_user_login
+theme: campaign
+region: content
+weight: 1
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

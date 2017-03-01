@@ -1,0 +1,22 @@
+uuid: 3cf0ced0-84fd-417b-9f08-7a9584c47e2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - cogswell_theme
+_core:
+  default_config_hash: wBogGxijLiX3Gj0U9IH_rwuv0SqXH2fZPb8v3dRfPOI
+id: cogswell_theme_search
+theme: cogswell_theme
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: '0'
+visibility: {  }

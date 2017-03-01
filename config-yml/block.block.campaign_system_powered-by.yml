@@ -1,0 +1,20 @@
+uuid: 6a735562-7fb5-439c-af45-fa87bf47d275
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - campaign
+id: campaign_system_powered-by
+theme: campaign
+region: content
+weight: 1
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

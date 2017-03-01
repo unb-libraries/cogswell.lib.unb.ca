@@ -1,0 +1,22 @@
+uuid: dd0bbb85-5c81-4bcb-851e-71c5a4d568e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cogswell_theme
+_core:
+  default_config_hash: jSZmBCcqYQr4kmUhNkVI9zUV2XDiMifu16gBSehH8jg
+id: cogswell_theme_content
+theme: cogswell_theme
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: visible
+visibility: {  }

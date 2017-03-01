@@ -1,0 +1,22 @@
+uuid: 884887d2-f450-4582-93b2-094bdbba35a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cogswell_theme
+_core:
+  default_config_hash: Un8sX1XhL9SINI_rE_YXDFHzdCDZr54OQHROhScyZXo
+id: cogswell_theme_help
+theme: cogswell_theme
+region: header
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

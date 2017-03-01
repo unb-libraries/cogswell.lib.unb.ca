@@ -1,0 +1,20 @@
+uuid: 3d25d9ca-da68-4cc0-be46-8f9d70e83a97
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acq_emkondusky_session
+id: acq_emkondusky_session_system_main
+theme: acq_emkondusky_session
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

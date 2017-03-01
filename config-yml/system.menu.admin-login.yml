@@ -1,0 +1,8 @@
+uuid: b24bc1d2-9429-44f7-8fd9-699db33b7ded
+langcode: en
+status: true
+dependencies: {  }
+id: admin-login
+label: 'Admin login'
+description: ''
+locked: false

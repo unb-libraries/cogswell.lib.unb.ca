@@ -1,0 +1,20 @@
+uuid: fe02f9ba-9188-4019-b08d-9dffa6079088
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - acq_cogswelltheme20
+id: acq_cogswelltheme20_system_main
+theme: acq_cogswelltheme20
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

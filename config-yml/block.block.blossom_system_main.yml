@@ -1,0 +1,20 @@
+uuid: dded02c1-3869-4fc6-b695-47c58b5e76ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - blossom
+id: blossom_system_main
+theme: blossom
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

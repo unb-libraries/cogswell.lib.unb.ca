@@ -1,0 +1,14 @@
+uuid: 6694f3ff-6cf9-4eea-974b-fd1737782ad8
+langcode: en
+status: true
+dependencies: {  }
+name: banner_960x210_
+label: 'Banner (964x240)'
+effects:
+  edde3fac-98f6-4d80-9ea0-a363e80d8b35:
+    uuid: edde3fac-98f6-4d80-9ea0-a363e80d8b35
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 970
+      height: 210

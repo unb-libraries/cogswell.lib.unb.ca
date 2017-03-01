@@ -1,0 +1,20 @@
+uuid: f3c8d459-94b1-461c-a509-5f07c1a792e3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cogswell_theme
+_core:
+  default_config_hash: XCWqSeTOh5bXVI1Ed_mwnOXna4OL408bB_FTwxqPEp8
+id: cogswell_theme_local_actions
+theme: cogswell_theme
+region: header
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

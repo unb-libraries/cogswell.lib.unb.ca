@@ -1,0 +1,26 @@
+uuid: 5c304d2c-2fa2-474c-9426-b4520197a5bc
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - cogswell_theme
+_core:
+  default_config_hash: pfeRZd47hJ6zovBqu3IbYntWmk7cKbyiEufY2IwwglA
+id: cogswell_theme_main_menu
+theme: cogswell_theme
+region: '-1'
+weight: -4
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+visibility: {  }
