@@ -68,7 +68,7 @@
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "drupal/config_update": "1.1",
         "drupal/console": "~1.0",
-        "drupal/core": "8.2.7",
+        "drupal/core": "8.3.0",
         "drupal/features": "3.1",
         "drupal/inline_entity_form": "1.0-alpha6",
         "drupal/views_slideshow": "4.4",
