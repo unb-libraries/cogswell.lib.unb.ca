@@ -17,4 +17,5 @@ function cogswell_install() {
   standard_install();
 
   // Can add code in here to make nodes, terms, etc.
+  \Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();
 }
