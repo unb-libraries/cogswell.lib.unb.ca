@@ -15,10 +15,6 @@ ENV DRUPAL_SITE_URI cogswell.lib.unb.ca
 ENV DRUPAL_SITE_UUID ac1ac8fe-3818-46e4-92b1-b4b64ac6e0c3
 ENV DRUPAL_CONFIGURATION_EXPORT_SKIP devel
 
-# Newrelic.
-ENV NEWRELIC_PHP_VERSION 7.4.0.198
-ENV NEWRELIC_PHP_ARCH musl
-
 # Add scripts, remove delete upstream drupal build.
 COPY ./scripts/container /scripts
 RUN /scripts/DeployUpstreamContainerScripts.sh && \
