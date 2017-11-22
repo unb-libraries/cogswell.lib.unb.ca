@@ -8,4 +8,5 @@
 $settings['config_readonly'] = TRUE;
 $settings['trusted_host_patterns'] = [
   '^cogswell\.lib\.unb\.ca$',
+  '^127\.0\.0\.1$',
 ];
