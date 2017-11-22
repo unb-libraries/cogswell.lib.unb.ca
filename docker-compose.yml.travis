@@ -1,0 +1,33 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql
+    restart: always
+    command: mysqld --skip-name-resolve --max_allowed_packet=64M
+    env_file:
+      - ./env/mysql.env
+    expose:
+     - "3306"
+
+  drupal-redis:
+    image: redis:3-alpine
+    restart: always
+    env_file:
+      - ./env/redis.env
+
+  cogswell.lib.unb.ca:
+    image: cogswell.lib.unb.ca:latest
+    restart: always
+    container_name: cogswell.lib.unb.ca
+    expose:
+      - "80"
+    ports:
+      - "3086:80"
+    env_file:
+      - ./env/drupal.env
+    volumes:
+      - ./config-yml:/app/configuration
+      - ./custom/modules:/app/modules/custom
+      - ./custom/themes:/app/themes/custom
+      - ./tests:/app/tests
