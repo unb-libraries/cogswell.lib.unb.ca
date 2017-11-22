@@ -47,7 +47,3 @@ Feature: Core
     Scenario: Visit Contact
       When I click "Contact"
       Then I should see the button "Send message"
-
-    Scenario: Visit Admin Login
-      When I click "Admin Login"
-      Then I should see the button "Log in"
