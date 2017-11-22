@@ -23,11 +23,6 @@ services:
     expose:
       - "80"
     ports:
-      - "3086:80"
+      - "80:80"
     env_file:
       - ./env/drupal.env
-    volumes:
-      - ./config-yml:/app/configuration
-      - ./custom/modules:/app/modules/custom
-      - ./custom/themes:/app/themes/custom
-      - ./tests:/app/tests
