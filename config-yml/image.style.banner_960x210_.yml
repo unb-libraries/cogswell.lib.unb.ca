@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 name: banner_960x210_
-label: 'Banner (1070x240)'
+label: 'Banner (1170x240)'
 effects:
   0c28b4ad-9d5a-4b7c-8e7f-0679f598322b:
     uuid: 0c28b4ad-9d5a-4b7c-8e7f-0679f598322b
