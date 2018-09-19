@@ -72,6 +72,11 @@ a:hover {
 }
 
 /* re-color buttons */
-.form-actions .form-submit {
-  background: var(--cog-orange);
+.form-actions .form-submit, #edit-submit {
+  background: var(--cog-orange) !important;
+}
+
+/* Hide search help */
+#edit-help-link, #edit-advanced {
+  display: none;
 }
