@@ -15,11 +15,8 @@ form label {
 }
 
 /* main menu text */
-#main-menu {
-  font-family: Helvetica, sans-serif !important;
-}
-
 #main-menu .container ul.menu li > a {
+  font-family: Helvetica, sans-serif !important;
   padding: 12px 14px;
   color: white;
   text-transform: none;;
