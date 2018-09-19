@@ -4,6 +4,16 @@
   --cog-dark-orange:  #803c00;
 }
 
+/* Global */
+
+input, textarea {
+  box-shadow: none !important;
+}
+
+form label {
+  width: 140px;
+}
+
 /* main menu text */
 #main-menu .container ul.menu li > a {
   padding: 12px 14px;
