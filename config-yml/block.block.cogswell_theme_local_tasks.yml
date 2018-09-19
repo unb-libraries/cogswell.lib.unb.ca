@@ -8,7 +8,7 @@ _core:
   default_config_hash: CeX8gBzRbvuWRaO-6eYv6EF41FgANiqNOeHpq2U2G60
 id: cogswell_theme_local_tasks
 theme: cogswell_theme
-region: '-1'
+region: header
 weight: 0
 provider: null
 plugin: local_tasks_block

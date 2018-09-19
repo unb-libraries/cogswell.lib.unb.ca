@@ -10,7 +10,7 @@ _core:
   default_config_hash: Ge3b4MEySV2QvgdUJ31QrS8HgCK9PCxSYCLVt2mUVoU
 id: zircon_breadcrumbs
 theme: zircon
-region: '-1'
+region: header
 weight: -100
 provider: null
 plugin: system_breadcrumb_block

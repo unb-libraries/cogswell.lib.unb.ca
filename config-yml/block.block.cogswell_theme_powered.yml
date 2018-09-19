@@ -10,7 +10,7 @@ _core:
   default_config_hash: GpUaz7FJXEtQb8SHa8h5OzSPj6RcNds8tOnO1-itpfQ
 id: cogswell_theme_powered
 theme: cogswell_theme
-region: '-1'
+region: header
 weight: -6
 provider: null
 plugin: system_powered_by_block

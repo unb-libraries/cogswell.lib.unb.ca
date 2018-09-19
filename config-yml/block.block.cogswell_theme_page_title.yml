@@ -8,7 +8,7 @@ _core:
   default_config_hash: zi8BYNgxjz5ew8ihNDfnBFXLJ5jCW-UNbCQ3mLUM_kE
 id: cogswell_theme_page_title
 theme: cogswell_theme
-region: '-1'
+region: header
 weight: 0
 provider: null
 plugin: page_title_block

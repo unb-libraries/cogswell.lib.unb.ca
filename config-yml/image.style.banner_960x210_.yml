@@ -3,12 +3,21 @@ langcode: en
 status: true
 dependencies: {  }
 name: banner_960x210_
-label: 'Banner (964x240)'
+label: 'Banner (1070x240)'
 effects:
-  edde3fac-98f6-4d80-9ea0-a363e80d8b35:
-    uuid: edde3fac-98f6-4d80-9ea0-a363e80d8b35
-    id: image_scale_and_crop
+  0c28b4ad-9d5a-4b7c-8e7f-0679f598322b:
+    uuid: 0c28b4ad-9d5a-4b7c-8e7f-0679f598322b
+    id: image_scale
     weight: 1
     data:
-      width: 970
-      height: 210
+      width: 1170
+      height: null
+      upscale: true
+  5c02bb9f-f5fc-4b59-af56-0cbea8526c5e:
+    uuid: 5c02bb9f-f5fc-4b59-af56-0cbea8526c5e
+    id: image_crop
+    weight: 2
+    data:
+      width: 1170
+      height: 240
+      anchor: center-center
