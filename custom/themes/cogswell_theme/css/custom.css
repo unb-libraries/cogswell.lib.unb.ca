@@ -79,6 +79,7 @@ a:hover, a:focus, a:focus-within, a:active,
 }
 
 /* Hide unused */
-.feed-icons {
+.feed-icons,
+#footer nav {
   display: none;
 }
