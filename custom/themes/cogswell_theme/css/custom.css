@@ -26,7 +26,6 @@ form label {
 /* re-color menu highlights */
 .site-name > a {
   font-size: 2.2em;
-  color: var(--cog-orange);
 }
 
 #main-menu .container ul.menu li .is-active {
@@ -57,20 +56,20 @@ form label {
 }
 
 /* re-color links on hover, focus, etc */
-a, a:visited {
+a, a:visited, .sidebar ul.menu li.menu-item--active-trail > a {
   color: var(--cog-orange);
 }
 
-a:hover, a:focus, a:focus-within, a:active {
+a:hover, a:focus, a:focus-within, a:active,
+.sidebar ul.menu li.menu-item--active-trail > a:hover,
+.sidebar ul.menu li.menu-item--active-trail > a:focus,
+.sidebar ul.menu li.menu-item--active-trail > a:focus-within,
+.sidebar ul.menu li.menu-item--active-trail > a:active {
   color: var(--cog-dark-orange);
 }
 
 .sidebar ul.menu li.menu-item--active-trail > a {
-    color: var(--cog-orange);
-}
 
-#main .content a:hover {
-    color: var(--cog-orange);
 }
 
 /* re-color buttons */
