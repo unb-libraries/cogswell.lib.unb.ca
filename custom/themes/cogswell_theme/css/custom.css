@@ -57,11 +57,11 @@ form label {
 }
 
 /* re-color links on hover, focus, etc */
-a {
+a, a:visited {
   color: var(--cog-orange);
 }
 
-a:hover {
+a:hover, a:focus, a:active {
   color: var(--cog-dark-orange);
 }
 .sidebar ul.menu li.menu-item--active-trail > a {
@@ -69,19 +69,6 @@ a:hover {
 }
 
 #main .content a:hover {
-    color: var(--cog-orange);
-}
-
-#footer ul.menu li a:hover, #footer ul.menu li a:focus {
-    color: var(--cog-orange);
-}
-
-#footer ul.menu li a.is-active {
-    color: var(--cog-orange);
-}
-
-#main .container .content .views-row:hover h2 a,
-#main .container .content .views-row:focus h2 a {
     color: var(--cog-orange);
 }
 
