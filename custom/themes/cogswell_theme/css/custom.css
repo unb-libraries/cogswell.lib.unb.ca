@@ -61,10 +61,10 @@ a, a:visited, .sidebar ul.menu li.menu-item--active-trail > a {
 }
 
 a:hover, a:focus, a:focus-within, a:active,
-.sidebar ul.menu li.menu-item--active-trail > a:hover,
-.sidebar ul.menu li.menu-item--active-trail > a:focus,
-.sidebar ul.menu li.menu-item--active-trail > a:focus-within,
-.sidebar ul.menu li.menu-item--active-trail > a:active {
+.sidebar ul.menu li.menu-item--active-trail > a:hover > span,
+.sidebar ul.menu li.menu-item--active-trail > a:focus > span,
+.sidebar ul.menu li.menu-item--active-trail > a:focus-within > span,
+.sidebar ul.menu li.menu-item--active-trail > a:active > span {
   color: var(--cog-dark-orange);
 }
 
