@@ -1,7 +1,7 @@
 name: Cogswell
 type: theme
 description: "For cogswell.lib.unb.ca - Sub-themed from Zircon."
-base theme: zircon
+base theme: bootstrap
 package: Custom
 core: 8.x
 
