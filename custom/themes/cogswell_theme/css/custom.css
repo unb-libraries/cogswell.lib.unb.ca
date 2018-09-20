@@ -77,3 +77,8 @@ a:hover, a:focus, a:focus-within, a:active,
 #edit-help-link, #edit-advanced {
   display: none;
 }
+
+/* Hide unused */
+.feed-icons {
+  display: none;
+}
