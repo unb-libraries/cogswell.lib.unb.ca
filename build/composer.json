@@ -84,7 +84,8 @@
         "drush/drush": "^8.1.15",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3",
-        "malsup/jquery.cycle": "3.0.3-a"
+        "malsup/jquery.cycle": "3.0.3-a",
+        "drupal/bootstrap": "3.12"
     },
     "require-dev": {
         "unb-libraries/drupal-development-libraries": "^8.0.0"
