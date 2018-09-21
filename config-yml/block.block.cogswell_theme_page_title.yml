@@ -9,7 +9,7 @@ _core:
 id: cogswell_theme_page_title
 theme: cogswell_theme
 region: header
-weight: 0
+weight: 2
 provider: null
 plugin: page_title_block
 settings:

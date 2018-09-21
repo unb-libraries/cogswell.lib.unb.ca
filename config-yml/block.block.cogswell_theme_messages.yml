@@ -11,7 +11,7 @@ _core:
 id: cogswell_theme_messages
 theme: cogswell_theme
 region: header
-weight: -7
+weight: -3
 provider: null
 plugin: system_messages_block
 settings:

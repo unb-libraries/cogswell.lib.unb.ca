@@ -1,0 +1,35 @@
+cogs_core.home:
+  title: 'Home'
+  description: 'Home'
+  parent: main
+  menu_name: main
+  route_name: cogs_core.home
+  weight: 10
+cogs_core.p&a.main:
+  title: 'Preface & Acknowledgements'
+  description: 'Preface & Acknowledgements'
+  parent: main
+  menu_name: main
+  route_name: cogs_core.home
+  weight: 20
+cogs_core.p&a.preface:
+  title: 'Preface'
+  description: 'Preface'
+  parent: cogs_core.p&a.main
+  menu_name: main
+  route_name: cogs_core.preface
+  weight: 21
+cogs_core.bio:
+  title: 'Biography'
+  description: 'Biography'
+  parent: main
+  menu_name: main
+  route_name: cogs_core.bio
+  weight: 30
+cogs_core.about:
+  title: 'Poetry & Poetics'
+  description: 'Poetry & Poetics'
+  parent: main
+  menu_name: main
+  route_name: cogs_core.poetry
+  weight: 40

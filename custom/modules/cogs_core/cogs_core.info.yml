@@ -1,0 +1,6 @@
+
+name: Cogswell Core
+type: module
+description: Core functionality extension for cogswell.lib.unb.ca
+core: 8.x
+package: Cogswell Custom Modules

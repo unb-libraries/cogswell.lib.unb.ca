@@ -1,6 +1,6 @@
 uuid: 5c304d2c-2fa2-474c-9426-b4520197a5bc
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: pfeRZd47hJ6zovBqu3IbYntWmk7cKbyiEufY2IwwglA
 id: cogswell_theme_main_menu
 theme: cogswell_theme
-region: header
-weight: -4
+region: navigation_collapsible
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:

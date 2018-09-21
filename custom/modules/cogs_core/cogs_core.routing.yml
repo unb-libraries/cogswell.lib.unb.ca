@@ -1,0 +1,16 @@
+cogs_core.home:
+  path: '/'
+  requirements:
+    _permission: 'access content'
+cogs_core.preface:
+  path: '/preface'
+  requirements:
+    _permission: 'access content'
+cogs_core.bio:
+  path: '/biography'
+  requirements:
+    _permission: 'access content'
+cogs_core.poetry:
+  path: '/poetry-and-poetics'
+  requirements:
+    _permission: 'access content'
