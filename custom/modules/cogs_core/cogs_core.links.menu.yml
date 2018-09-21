@@ -20,6 +20,20 @@ cogs_core.p&a.preface:
   menu_name: main
   route_name: cogs_core.preface
   weight: 10
+cogs_core.p&a.interface:
+  title: 'The Digital Interface'
+  description: 'The Digital Interface'
+  parent: cogs_core.p&a.main
+  menu_name: main
+  route_name: cogs_core.interface
+  weight: 20
+cogs_core.p&a.acknowledgements:
+  title: 'Acknowledgements'
+  description: 'Acknowledgements'
+  parent: cogs_core.p&a.main
+  menu_name: main
+  route_name: cogs_core.ack
+  weight: 30
 cogs_core.bio:
   title: 'Biography'
   description: 'Biography'

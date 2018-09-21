@@ -3,7 +3,15 @@ cogs_core.home:
   requirements:
     _permission: 'access content'
 cogs_core.preface:
-  path: '/preface'
+  path: 'content/preface'
+  requirements:
+    _permission: 'access content'
+cogs_core.interface:
+  path: 'content/digital-interface'
+  requirements:
+    _permission: 'access content'
+cogs_core.ack:
+  path: 'content/acknowledgement'
   requirements:
     _permission: 'access content'
 cogs_core.bio:
