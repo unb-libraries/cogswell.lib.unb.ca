@@ -11,6 +11,7 @@ cogs_core.p&a.main:
   parent: main
   menu_name: main
   route_name: cogs_core.home
+  expanded: TRUE
   weight: 20
 cogs_core.p&a.preface:
   title: 'Preface'
