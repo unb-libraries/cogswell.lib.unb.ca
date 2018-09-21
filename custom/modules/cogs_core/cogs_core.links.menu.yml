@@ -18,7 +18,7 @@ cogs_core.p&a.preface:
   parent: cogs_core.p&a.main
   menu_name: main
   route_name: cogs_core.preface
-  weight: 21
+  weight: 10
 cogs_core.bio:
   title: 'Biography'
   description: 'Biography'
@@ -26,10 +26,10 @@ cogs_core.bio:
   menu_name: main
   route_name: cogs_core.bio
   weight: 30
-cogs_core.about:
+cogs_core.p&p:
   title: 'Poetry & Poetics'
   description: 'Poetry & Poetics'
   parent: main
   menu_name: main
-  route_name: cogs_core.poetry
+  route_name: cogs_core.p&p
   weight: 40

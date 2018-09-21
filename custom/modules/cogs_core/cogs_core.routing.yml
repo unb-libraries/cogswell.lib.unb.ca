@@ -10,7 +10,7 @@ cogs_core.bio:
   path: '/biography'
   requirements:
     _permission: 'access content'
-cogs_core.poetry:
+cogs_core.p&p:
   path: '/poetry-and-poetics'
   requirements:
     _permission: 'access content'
