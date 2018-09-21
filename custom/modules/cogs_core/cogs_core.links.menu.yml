@@ -34,13 +34,56 @@ cogs_core.p&a.acknowledgements:
   menu_name: main
   route_name: cogs_core.ack
   weight: 30
-cogs_core.bio:
+cogs_core.bio.main:
   title: 'Biography'
   description: 'Biography'
   parent: main
   menu_name: main
-  route_name: cogs_core.bio
+  route_name: cogs_core.home
+  expanded: TRUE
   weight: 30
+cogs_core.bio.ancestry:
+  title: 'Ancestry'
+  description: 'Ancestry'
+  parent: cogs_core.bio.main
+  menu_name: main
+  route_name: cogs_core.ancestry
+  weight: 10
+cogs_core.bio.childhood:
+  title: 'Childhood, Schooling, and Military Service'
+  description: 'Childhood, Schooling, and Military Service'
+  parent: cogs_core.bio.main
+  menu_name: main
+  route_name: cogs_core.childhood
+  weight: 20
+cogs_core.bio.universities:
+  title: 'Universities of New Brunswick and Edinburgh'
+  description: 'Universities of New Brunswick and Edinburgh'
+  parent: cogs_core.bio.main
+  menu_name: main
+  route_name: cogs_core.universities
+  weight: 30
+cogs_core.bio.fiddlehead:
+  title: 'The Fiddlehead and Fiddlehead Poetry Books'
+  description: 'The Fiddlehead and Fiddlehead Poetry Books'
+  parent: cogs_core.bio.main
+  menu_name: main
+  route_name: cogs_core.fiddlehead
+  weight: 40
+cogs_core.bio.translation:
+  title: 'Translation and Cultural Advocacy'
+  description: 'Translation and Cultural Advocacy'
+  parent: cogs_core.bio.main
+  menu_name: main
+  route_name: cogs_core.translation
+  weight: 50
+cogs_core.bio.final:
+  title: 'Final Years'
+  description: 'Final Years'
+  parent: cogs_core.bio.main
+  menu_name: main
+  route_name: cogs_core.final
+  weight: 60
 cogs_core.p&p:
   title: 'Poetry & Poetics'
   description: 'Poetry & Poetics'
