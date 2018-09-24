@@ -16,7 +16,6 @@ form label {
 
 /* Navbar */
 .name.navbar-brand {
-  display: inline-table;
   margin-bottom: 20px;
   padding-left: 0px;
   font-size: 34px;
