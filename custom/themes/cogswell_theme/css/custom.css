@@ -14,6 +14,13 @@ form label {
   width: 140px;
 }
 
+/* Navbar */
+.name.navbar-brand {
+  margin-bottom: 20px;
+  padding-left: 0px;
+  font-size: 34px;
+}
+
 /* main menu text */
 #main-menu .container ul.menu li > a {
   font-family: Helvetica, sans-serif !important;
@@ -66,11 +73,17 @@ a:hover, a:focus, a:focus-within, a:active,
 #main .container .content .views-row:hover h2 a, #main .container .content .views-row:focus h2 a:focus-within,
 #main .container .content .views-row:hover h2 a, #main .container .content .views-row:focus h2 a:active {
   color: var(--cog-dark-orange);
+  text-decoration: underline !important;
 }
 
 /* re-color buttons */
 .form-actions .form-submit, #edit-submit {
   background: var(--cog-orange) !important;
+}
+
+/* Slideshow */
+body > div.dialog-off-canvas-main-canvas > div > div > div[role="heading"]{
+  margin-bottom: 20px;
 }
 
 /* Hide search help */
