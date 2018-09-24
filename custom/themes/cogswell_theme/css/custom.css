@@ -21,11 +21,48 @@ form label {
   font-size: 34px;
 }
 
-.name.navbar-brand, .navbar-text {
-  line-height: 34px;
+/* main menu text */
+#main-menu .container ul.menu li > a {
+  font-family: Helvetica, sans-serif !important;
+  padding: 12px 14px;
+  color: white;
+  text-transform: none;;
+  font-size: 1.024em;
 }
 
-/* Re-color links on hover, focus, etc */
+/* re-color menu highlights */
+.site-name > a {
+  font-size: 2.2em;
+}
+
+#main-menu .container ul.menu li .is-active {
+  background: var(--cog-orange);
+}
+
+#main-menu .container ul.menu li:hover > a {
+  background: var(--cog-orange);
+}
+
+#main-menu .container ul.menu li:focus > a {
+  background-color: var(--cog-orange);
+}
+
+#main-menu .container ul.menu ul.menu {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    z-index: 100;
+    background: #272727;
+    border: 2px solid var(--cog-orange);
+    width: 220px;
+    display: none;
+}
+
+#main-menu .container ul.menu li.menu-item--active-trail > a {
+  background: var(--cog-orange);
+}
+
+/* re-color links on hover, focus, etc */
 a, a:visited, #main .container .content .views-row:hover h2 a, #main .container .content .views-row:focus h2 a {
   color: var(--cog-orange);
 }
@@ -45,17 +82,8 @@ a:hover, a:focus, a:focus-within, a:active,
 }
 
 /* Slideshow */
-#block-views-block-slideshow-block-1-2 {
-  display: inline-block;
-}
-
 body > div.dialog-off-canvas-main-canvas > div > div > div[role="heading"]{
   margin-bottom: 20px;
-}
-
-/* Content */
-div.content {
-  margin-bottom: 10px;
 }
 
 /* Hide search help */
