@@ -110,3 +110,7 @@ cogs_core.biblio.reviewsofcogswell:
   path: 'content/reviewsofcogswell'
   requirements:
     _permission: 'access content'
+cogs_core.works-cited:
+  path: 'content/works-cited'
+  requirements:
+    _permission: 'access content'

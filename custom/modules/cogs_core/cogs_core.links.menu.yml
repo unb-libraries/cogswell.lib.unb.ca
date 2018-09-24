@@ -226,3 +226,18 @@ cogs_core.biblio.reviewsofcogswell:
   menu_name: main
   route_name: cogs_core.biblio.reviewsofcogswell
   weight: 70
+cogs_core.cited:
+  title: 'Works Cited'
+  description: 'Works Cited'
+  parent: main
+  menu_name: main
+  route_name: cogs_core.works-cited
+  weight: 60
+cogs_core.contact:
+  title: 'Contact'
+  description: 'Contact'
+  parent: main
+  menu_name: main
+  route_name: entity.contact_form.canonical
+  route_parameters: { contact_form: 'website_feedback' }
+  weight: 70
