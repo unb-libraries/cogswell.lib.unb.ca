@@ -169,3 +169,60 @@ cogs_core.p&p.by-borealis:
   menu_name: main
   route_name: cogs_core.p&p.by-borealis
   weight: 110
+cogs_core.biblio.main:
+  title: 'Bibliography'
+  description: 'Bibliography'
+  parent: main
+  menu_name: main
+  route_name: cogs_core.home
+  expanded: TRUE
+  weight: 50
+cogs_core.biblio.poetry:
+  title: 'Poetry'
+  description: 'Poetry'
+  parent: cogs_core.biblio.main
+  menu_name: main
+  route_name: cogs_core.cogswellpoetry
+  weight: 10
+cogs_core.biblio.cogswelltranslations:
+  title: 'Translations'
+  description: 'Translations'
+  parent: cogs_core.biblio.main
+  menu_name: main
+  route_name: cogs_core.cogswelltranslations
+  weight: 20
+cogs_core.biblio.anthologies:
+  title: 'Anthologies and Editions'
+  description: 'Anthologies and Editions'
+  parent: cogs_core.biblio.main
+  menu_name: main
+  route_name: cogs_core.anthologies
+  weight: 30
+cogs_core.biblio.literarycrit:
+  title: 'Literary Criticism: Articles, Essays, Chapters, Introductions, etc.'
+  description: 'Literary Criticism: Articles, Essays, Chapters, Introductions, etc.'
+  parent: cogs_core.biblio.main
+  menu_name: main
+  route_name: cogs_core.literarycrit
+  weight: 40
+cogs_core.biblio.litcrit:
+  title: 'Literary Criticism: Selected Reviews'
+  description: 'Literary Criticism: Selected Reviews'
+  parent: cogs_core.biblio.main
+  menu_name: main
+  route_name: cogs_core.litcrit
+  weight: 50
+cogs_core.biblio.articlesaboutcogswell:
+  title: 'Articles About & Interviews with Fred Cogswell'
+  description: 'Articles About & Interviews with Fred Cogswell'
+  parent: cogs_core.biblio.main
+  menu_name: main
+  route_name: cogs_core.articlesaboutcogswell
+  weight: 60
+cogs_core.biblio.reviewsofcogswell:
+  title: 'Selected Reviews of Fred Cogswell's Work'
+  description: 'Selected Reviews of Fred Cogswell's Work'
+  parent: cogs_core.biblio.main
+  menu_name: main
+  route_name: cogs_core.reviewsofcogswell
+  weight: 70

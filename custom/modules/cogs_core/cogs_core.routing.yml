@@ -82,3 +82,31 @@ cogs_core.p&p.by-borealis:
   path: 'content/selected-borealis'
   requirements:
     _permission: 'access content'
+cogs_core.biblio.cogswellpoetry:
+  path: 'content/cogswellpoetry'
+  requirements:
+    _permission: 'access content'
+cogs_core.biblio.cogswelltranslations:
+  path: 'content/cogswelltranslations'
+  requirements:
+    _permission: 'access content'
+cogs_core.biblio.anthologies:
+  path: 'content/anthologies'
+  requirements:
+    _permission: 'access content'
+cogs_core.biblio.literarycrit:
+  path: 'content/literarycrit'
+  requirements:
+    _permission: 'access content'
+cogs_core.biblio.litcrit:
+  path: 'content/litcrit'
+  requirements:
+    _permission: 'access content'
+cogs_core.biblio.articlesaboutcogswell:
+  path: 'content/articlesaboutcogswell'
+  requirements:
+    _permission: 'access content'
+cogs_core.biblio.reviewsofcogswell:
+  path: 'content/reviewsofcogswell'
+  requirements:
+    _permission: 'access content'
