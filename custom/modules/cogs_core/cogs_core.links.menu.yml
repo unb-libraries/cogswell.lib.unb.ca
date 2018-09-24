@@ -177,52 +177,52 @@ cogs_core.biblio.main:
   route_name: cogs_core.home
   expanded: TRUE
   weight: 50
-cogs_core.biblio.poetry:
+cogs_core.biblio.cogswellpoetry:
   title: 'Poetry'
   description: 'Poetry'
   parent: cogs_core.biblio.main
   menu_name: main
-  route_name: cogs_core.cogswellpoetry
+  route_name: cogs_core.biblio.cogswellpoetry
   weight: 10
 cogs_core.biblio.cogswelltranslations:
   title: 'Translations'
   description: 'Translations'
   parent: cogs_core.biblio.main
   menu_name: main
-  route_name: cogs_core.cogswelltranslations
+  route_name: cogs_core.biblio.cogswelltranslations
   weight: 20
 cogs_core.biblio.anthologies:
   title: 'Anthologies and Editions'
   description: 'Anthologies and Editions'
   parent: cogs_core.biblio.main
   menu_name: main
-  route_name: cogs_core.anthologies
+  route_name: cogs_core.biblio.anthologies
   weight: 30
 cogs_core.biblio.literarycrit:
   title: 'Literary Criticism: Articles, Essays, Chapters, Introductions, etc.'
   description: 'Literary Criticism: Articles, Essays, Chapters, Introductions, etc.'
   parent: cogs_core.biblio.main
   menu_name: main
-  route_name: cogs_core.literarycrit
+  route_name: cogs_core.biblio.literarycrit
   weight: 40
 cogs_core.biblio.litcrit:
   title: 'Literary Criticism: Selected Reviews'
   description: 'Literary Criticism: Selected Reviews'
   parent: cogs_core.biblio.main
   menu_name: main
-  route_name: cogs_core.litcrit
+  route_name: cogs_core.biblio.litcrit
   weight: 50
 cogs_core.biblio.articlesaboutcogswell:
   title: 'Articles About & Interviews with Fred Cogswell'
   description: 'Articles About & Interviews with Fred Cogswell'
   parent: cogs_core.biblio.main
   menu_name: main
-  route_name: cogs_core.articlesaboutcogswell
+  route_name: cogs_core.biblio.articlesaboutcogswell
   weight: 60
 cogs_core.biblio.reviewsofcogswell:
-  title: 'Selected Reviews of Fred Cogswell's Work'
-  description: 'Selected Reviews of Fred Cogswell's Work'
+  title: "Selected Reviews of Fred Cogswell's Work"
+  description: "Selected Reviews of Fred Cogswell's Work"
   parent: cogs_core.biblio.main
   menu_name: main
-  route_name: cogs_core.reviewsofcogswell
+  route_name: cogs_core.biblio.reviewsofcogswell
   weight: 70
