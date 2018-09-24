@@ -38,7 +38,47 @@ cogs_core.final:
   path: 'content/final'
   requirements:
     _permission: 'access content'
-cogs_core.p&p:
-  path: '/poetry-and-poetics'
+cogs_core.p&p.selection:
+  path: 'content/selection'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.borealis:
+  path: 'content/borealis'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.variants:
+  path: 'content/variants'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.grouping:
+  path: 'content/grouping'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.translations:
+  path: 'content/translations'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.introduction:
+  path: 'content/introduction'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.traditional:
+  path: 'content/traditional'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.veil:
+  path: 'content/veil'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.conclusion:
+  path: 'content/conclusion'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.selected:
+  path: 'content/selected-poems'
+  requirements:
+    _permission: 'access content'
+cogs_core.p&p.by-borealis:
+  path: 'content/selected-borealis'
   requirements:
     _permission: 'access content'

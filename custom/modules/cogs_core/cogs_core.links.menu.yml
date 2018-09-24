@@ -84,10 +84,88 @@ cogs_core.bio.final:
   menu_name: main
   route_name: cogs_core.final
   weight: 60
-cogs_core.p&p:
+cogs_core.p&p.main:
   title: 'Poetry & Poetics'
   description: 'Poetry & Poetics'
   parent: main
   menu_name: main
-  route_name: cogs_core.p&p
+  route_name: cogs_core.home
+  expanded: TRUE
   weight: 40
+cogs_core.p&p.selection:
+  title: 'Selection of Poems'
+  description: 'Selection of Poems'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.selection
+  weight: 10
+cogs_core.p&p.borealis:
+  title: 'Borealis Press'
+  description: 'Borealis Press'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.borealis
+  weight: 20
+cogs_core.p&p.variants:
+  title: 'Textual/Authorial Variants'
+  description: 'Textual/Authorial Variants'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.variants
+  weight: 30
+cogs_core.p&p.grouping:
+  title: 'Grouping'
+  description: 'Grouping'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.grouping
+  weight: 40
+cogs_core.p&p.translations:
+  title: 'Translations from French Poets'
+  description: 'Translations from French Poets'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.translations
+  weight: 50
+cogs_core.p&p.introduction:
+  title: 'Introduction'
+  description: 'Introduction'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.introduction
+  weight: 60
+cogs_core.p&p.traditional:
+  title: 'Traditional Metres and Form'
+  description: 'Traditional Metres and Form'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.traditional
+  weight: 70
+cogs_core.p&p.veil:
+  title: '"Behind the veil of things"'
+  description: '"Behind the veil of things"'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.veil
+  weight: 80
+cogs_core.p&p.conclusion:
+  title: 'Conclusion'
+  description: 'Conclusion'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.conclusion
+  weight: 90
+cogs_core.p&p.selected:
+  title: 'Selected Poems'
+  description: 'Selected Poems'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.selected
+  weight: 100
+cogs_core.p&p.by-borealis:
+  title: 'List of Cogswell Poem Titles Published by Borealis'
+  description: 'List of Cogswell Poem Titles Published by Borealis'
+  parent: cogs_core.p&p.main
+  menu_name: main
+  route_name: cogs_core.p&p.by-borealis
+  weight: 110
