@@ -11,7 +11,7 @@ _core:
 id: cogswell_theme_branding
 theme: cogswell_theme
 region: header
-weight: -2
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

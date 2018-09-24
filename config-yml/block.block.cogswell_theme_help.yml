@@ -11,7 +11,7 @@ _core:
 id: cogswell_theme_help
 theme: cogswell_theme
 region: header
-weight: -5
+weight: -4
 provider: null
 plugin: help_block
 settings:
