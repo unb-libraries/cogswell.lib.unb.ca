@@ -1,6 +1,6 @@
 uuid: 8bfeab5b-b398-4272-adbb-0f59b6b280d5
 langcode: en
-status: false
+status: true
 dependencies:
   theme:
     - cogswell_theme
@@ -8,8 +8,8 @@ _core:
   default_config_hash: zi8BYNgxjz5ew8ihNDfnBFXLJ5jCW-UNbCQ3mLUM_kE
 id: cogswell_theme_page_title
 theme: cogswell_theme
-region: header
-weight: 2
+region: content
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

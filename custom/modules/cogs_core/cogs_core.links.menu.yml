@@ -1,3 +1,10 @@
+cogs_core.home:
+  title: 'Home'
+  description: 'Home'
+  parent: main
+  menu_name: main
+  route_name: cogs_core.home
+  weight: 10
 cogs_core.p&a.main:
   title: 'Preface & Acknowledgements'
   description: 'Preface & Acknowledgements'
