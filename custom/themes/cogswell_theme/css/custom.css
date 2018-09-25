@@ -43,6 +43,14 @@ form label {
   text-decoration: none !important;
 }
 
+.nav > li > a {
+  padding: 8px 10px !important;
+}
+
+.navbar {
+  min-height: 38px !important;
+}
+
 /* re-color menu highlights */
 .site-name > a {
   font-size: 2.2em;

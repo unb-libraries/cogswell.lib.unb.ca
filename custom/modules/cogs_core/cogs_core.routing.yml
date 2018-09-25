@@ -2,116 +2,24 @@ cogs_core.home:
   path: '/'
   requirements:
     _permission: 'access content'
-cogs_core.p&a.main:
+cogs_core.p&a:
   path: 'content/preface-acknowledgements'
   requirements:
     _permission: 'access content'
-cogs_core.preface:
-  path: 'content/preface'
+cogs_core.bio:
+  path: 'content/biography'
   requirements:
     _permission: 'access content'
-cogs_core.interface:
-  path: 'content/digital-interface'
+cogs_core.p&p:
+  path: 'content/poetry-and-poetics'
   requirements:
     _permission: 'access content'
-cogs_core.ack:
-  path: 'content/acknowledgement'
+cogs_core.correspondence:
+  path: 'content/correspondence'
   requirements:
     _permission: 'access content'
-cogs_core.ancestry:
-  path: 'content/ancestry'
-  requirements:
-    _permission: 'access content'
-cogs_core.childhood:
-  path: 'content/childhood'
-  requirements:
-    _permission: 'access content'
-cogs_core.universities:
-  path: 'content/universities'
-  requirements:
-    _permission: 'access content'
-cogs_core.fiddlehead:
-  path: 'content/fiddlehead'
-  requirements:
-    _permission: 'access content'
-cogs_core.translation:
-  path: 'content/translation'
-  requirements:
-    _permission: 'access content'
-cogs_core.final:
-  path: 'content/final'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.selection:
-  path: 'content/selection'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.borealis:
-  path: 'content/borealis'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.variants:
-  path: 'content/variants'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.grouping:
-  path: 'content/grouping'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.translations:
-  path: 'content/translations'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.introduction:
-  path: 'content/introduction'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.traditional:
-  path: 'content/traditional'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.veil:
-  path: 'content/veil'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.conclusion:
-  path: 'content/conclusion'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.selected:
-  path: 'content/selected-poems'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p.by-borealis:
-  path: 'content/selected-borealis'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio.cogswellpoetry:
-  path: 'content/cogswellpoetry'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio.cogswelltranslations:
-  path: 'content/cogswelltranslations'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio.anthologies:
-  path: 'content/anthologies'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio.literarycrit:
-  path: 'content/literarycrit'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio.litcrit:
-  path: 'content/litcrit'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio.articlesaboutcogswell:
-  path: 'content/articlesaboutcogswell'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio.reviewsofcogswell:
-  path: 'content/reviewsofcogswell'
+cogs_core.biblio:
+  path: 'content/bibliography'
   requirements:
     _permission: 'access content'
 cogs_core.works-cited:

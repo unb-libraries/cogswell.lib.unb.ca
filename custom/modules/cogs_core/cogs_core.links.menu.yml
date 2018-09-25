@@ -5,227 +5,41 @@ cogs_core.home:
   menu_name: main
   route_name: cogs_core.home
   weight: 10
-cogs_core.p&a.main:
+cogs_core.p&a:
   title: 'Preface & Acknowledgements'
   description: 'Preface & Acknowledgements'
   parent: main
   menu_name: main
-  route_name: cogs_core.p&a.main
-  expanded: TRUE
+  route_name: cogs_core.p&a
   weight: 20
-cogs_core.p&a.preface:
-  title: 'Preface'
-  description: 'Preface'
-  parent: cogs_core.p&a.main
-  menu_name: main
-  route_name: cogs_core.preface
-  weight: 10
-cogs_core.p&a.interface:
-  title: 'The Digital Interface'
-  description: 'The Digital Interface'
-  parent: cogs_core.p&a.main
-  menu_name: main
-  route_name: cogs_core.interface
-  weight: 20
-cogs_core.p&a.acknowledgements:
-  title: 'Acknowledgements'
-  description: 'Acknowledgements'
-  parent: cogs_core.p&a.main
-  menu_name: main
-  route_name: cogs_core.ack
-  weight: 30
-cogs_core.bio.main:
+cogs_core.bio:
   title: 'Biography'
   description: 'Biography'
   parent: main
   menu_name: main
-  route_name: cogs_core.home
-  expanded: TRUE
+  route_name: cogs_core.bio
   weight: 30
-cogs_core.bio.ancestry:
-  title: 'Ancestry'
-  description: 'Ancestry'
-  parent: cogs_core.bio.main
-  menu_name: main
-  route_name: cogs_core.ancestry
-  weight: 10
-cogs_core.bio.childhood:
-  title: 'Childhood, Schooling, and Military Service'
-  description: 'Childhood, Schooling, and Military Service'
-  parent: cogs_core.bio.main
-  menu_name: main
-  route_name: cogs_core.childhood
-  weight: 20
-cogs_core.bio.universities:
-  title: 'Universities of New Brunswick and Edinburgh'
-  description: 'Universities of New Brunswick and Edinburgh'
-  parent: cogs_core.bio.main
-  menu_name: main
-  route_name: cogs_core.universities
-  weight: 30
-cogs_core.bio.fiddlehead:
-  title: 'The Fiddlehead and Fiddlehead Poetry Books'
-  description: 'The Fiddlehead and Fiddlehead Poetry Books'
-  parent: cogs_core.bio.main
-  menu_name: main
-  route_name: cogs_core.fiddlehead
-  weight: 40
-cogs_core.bio.translation:
-  title: 'Translation and Cultural Advocacy'
-  description: 'Translation and Cultural Advocacy'
-  parent: cogs_core.bio.main
-  menu_name: main
-  route_name: cogs_core.translation
-  weight: 50
-cogs_core.bio.final:
-  title: 'Final Years'
-  description: 'Final Years'
-  parent: cogs_core.bio.main
-  menu_name: main
-  route_name: cogs_core.final
-  weight: 60
-cogs_core.p&p.main:
+cogs_core.p&p:
   title: 'Poetry & Poetics'
   description: 'Poetry & Poetics'
   parent: main
   menu_name: main
-  route_name: cogs_core.home
-  expanded: TRUE
+  route_name: cogs_core.p&p
   weight: 40
-cogs_core.p&p.selection:
-  title: 'Selection of Poems'
-  description: 'Selection of Poems'
-  parent: cogs_core.p&p.main
+cogs_core.correspondence:
+  title: 'Correspondence'
+  description: 'Correspondence'
+  parent: main
   menu_name: main
-  route_name: cogs_core.p&p.selection
-  weight: 10
-cogs_core.p&p.borealis:
-  title: 'Borealis Press'
-  description: 'Borealis Press'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.borealis
-  weight: 20
-cogs_core.p&p.variants:
-  title: 'Textual/Authorial Variants'
-  description: 'Textual/Authorial Variants'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.variants
-  weight: 30
-cogs_core.p&p.grouping:
-  title: 'Grouping'
-  description: 'Grouping'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.grouping
+  route_name: cogs_core.correspondence
   weight: 40
-cogs_core.p&p.translations:
-  title: 'Translations from French Poets'
-  description: 'Translations from French Poets'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.translations
-  weight: 50
-cogs_core.p&p.introduction:
-  title: 'Introduction'
-  description: 'Introduction'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.introduction
-  weight: 60
-cogs_core.p&p.traditional:
-  title: 'Traditional Metres and Form'
-  description: 'Traditional Metres and Form'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.traditional
-  weight: 70
-cogs_core.p&p.veil:
-  title: '"Behind the veil of things"'
-  description: '"Behind the veil of things"'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.veil
-  weight: 80
-cogs_core.p&p.conclusion:
-  title: 'Conclusion'
-  description: 'Conclusion'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.conclusion
-  weight: 90
-cogs_core.p&p.selected:
-  title: 'Selected Poems'
-  description: 'Selected Poems'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.selected
-  weight: 100
-cogs_core.p&p.by-borealis:
-  title: 'List of Cogswell Poem Titles Published by Borealis'
-  description: 'List of Cogswell Poem Titles Published by Borealis'
-  parent: cogs_core.p&p.main
-  menu_name: main
-  route_name: cogs_core.p&p.by-borealis
-  weight: 110
-cogs_core.biblio.main:
+cogs_core.biblio:
   title: 'Bibliography'
   description: 'Bibliography'
   parent: main
   menu_name: main
-  route_name: cogs_core.home
-  expanded: TRUE
-  weight: 50
-cogs_core.biblio.cogswellpoetry:
-  title: 'Poetry'
-  description: 'Poetry'
-  parent: cogs_core.biblio.main
-  menu_name: main
-  route_name: cogs_core.biblio.cogswellpoetry
-  weight: 10
-cogs_core.biblio.cogswelltranslations:
-  title: 'Translations'
-  description: 'Translations'
-  parent: cogs_core.biblio.main
-  menu_name: main
-  route_name: cogs_core.biblio.cogswelltranslations
-  weight: 20
-cogs_core.biblio.anthologies:
-  title: 'Anthologies and Editions'
-  description: 'Anthologies and Editions'
-  parent: cogs_core.biblio.main
-  menu_name: main
-  route_name: cogs_core.biblio.anthologies
-  weight: 30
-cogs_core.biblio.literarycrit:
-  title: 'Literary Criticism: Articles, Essays, Chapters, Introductions, etc.'
-  description: 'Literary Criticism: Articles, Essays, Chapters, Introductions, etc.'
-  parent: cogs_core.biblio.main
-  menu_name: main
-  route_name: cogs_core.biblio.literarycrit
-  weight: 40
-cogs_core.biblio.litcrit:
-  title: 'Literary Criticism: Selected Reviews'
-  description: 'Literary Criticism: Selected Reviews'
-  parent: cogs_core.biblio.main
-  menu_name: main
-  route_name: cogs_core.biblio.litcrit
-  weight: 50
-cogs_core.biblio.articlesaboutcogswell:
-  title: 'Articles About & Interviews with Fred Cogswell'
-  description: 'Articles About & Interviews with Fred Cogswell'
-  parent: cogs_core.biblio.main
-  menu_name: main
-  route_name: cogs_core.biblio.articlesaboutcogswell
+  route_name: cogs_core.biblio
   weight: 60
-cogs_core.biblio.reviewsofcogswell:
-  title: "Selected Reviews of Fred Cogswell's Work"
-  description: "Selected Reviews of Fred Cogswell's Work"
-  parent: cogs_core.biblio.main
-  menu_name: main
-  route_name: cogs_core.biblio.reviewsofcogswell
-  weight: 70
 cogs_core.cited:
   title: 'Works Cited'
   description: 'Works Cited'
