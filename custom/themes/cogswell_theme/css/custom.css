@@ -51,12 +51,6 @@ form label {
   min-height: 38px !important;
 }
 
-.is-active {
-  color: #fff;
-  background-color: #666;
-  text-decoration: none !important;
-}
-
 /* re-color menu highlights */
 .site-name > a {
   font-size: 2.2em;
