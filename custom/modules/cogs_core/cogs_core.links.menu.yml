@@ -10,7 +10,7 @@ cogs_core.p&a.main:
   description: 'Preface & Acknowledgements'
   parent: main
   menu_name: main
-  route_name: cogs_core.home
+  route_name: cogs_core.p&a.main
   expanded: TRUE
   weight: 20
 cogs_core.p&a.preface:

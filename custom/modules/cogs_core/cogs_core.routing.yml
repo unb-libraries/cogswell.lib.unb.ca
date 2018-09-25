@@ -2,6 +2,10 @@ cogs_core.home:
   path: '/'
   requirements:
     _permission: 'access content'
+cogs_core.p&a.main:
+  path: 'content/preface-acknowledgements'
+  requirements:
+    _permission: 'access content'
 cogs_core.preface:
   path: 'content/preface'
   requirements:
