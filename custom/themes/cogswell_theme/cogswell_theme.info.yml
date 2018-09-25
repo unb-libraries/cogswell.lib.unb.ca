@@ -9,6 +9,7 @@ libraries:
   - cogswell_theme/global-styling
 
 regions:
+  branding: 'Branding'
   header: 'Top Bar'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'

@@ -53,6 +53,18 @@
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 
+{# Branding #}
+{% if page.branding %}
+  {% block branding %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        {{ page.branding }}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+{% endif %}
 
 {# Header #}
 {% if page.header %}

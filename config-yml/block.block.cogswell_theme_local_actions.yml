@@ -9,7 +9,7 @@ _core:
 id: cogswell_theme_local_actions
 theme: cogswell_theme
 region: header
-weight: -3
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:
