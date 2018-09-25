@@ -17,7 +17,6 @@ form label {
 /* Navbar */
 .name.navbar-brand {
   display: inline-table;
-  margin-bottom: 20px;
   padding-left: 0px;
   line-height: 34px;
   font-size: 34px;
@@ -26,6 +25,7 @@ form label {
 .navbar-text {
   position: relative;
   top: 14px;
+  margin-bottom: 20px !important;
 }
 
 .navbar-default {background-color: #333; border-color: #333;}
