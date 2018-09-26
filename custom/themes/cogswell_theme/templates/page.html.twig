@@ -53,32 +53,6 @@
 #}
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 
-{# Branding #}
-{% if page.branding %}
-  {% block branding %}
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        {{ page.branding }}
-      </div>
-    </div>
-  </div>
-  {% endblock %}
-{% endif %}
-
-{# Header #}
-{% if page.header %}
-  {% block header %}
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12" role="heading">
-        {{ page.header }}
-      </div>
-    </div>
-  </div>
-  {% endblock %}
-{% endif %}
-
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}
   {% block navbar %}
@@ -116,6 +90,32 @@
         </div>
       {% endif %}
     </header>
+  {% endblock %}
+{% endif %}
+
+{# Branding #}
+{% if page.branding %}
+  {% block branding %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        {{ page.branding }}
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+{% endif %}
+
+{# Header #}
+{% if page.header %}
+  {% block header %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" role="heading">
+        {{ page.header }}
+      </div>
+    </div>
+  </div>
   {% endblock %}
 {% endif %}
 
