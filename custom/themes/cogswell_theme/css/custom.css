@@ -18,6 +18,10 @@ h1.js-quickedit-page-title.page-header {
   font-size: 24px !important;
 }
 
+div.main-container.container.js-quickedit-main-content {
+  margin-bottom: 40px;
+}
+
 /* Navbar */
 .name.navbar-brand {
   display: inline-table;

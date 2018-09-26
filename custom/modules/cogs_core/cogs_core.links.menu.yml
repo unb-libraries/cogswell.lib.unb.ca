@@ -32,21 +32,21 @@ cogs_core.correspondence:
   parent: main
   menu_name: main
   url: internal:/content/correspondence
-  weight: 40
+  weight: 50
 cogs_core.biblio:
   title: 'Bibliography'
   description: 'Bibliography'
   parent: main
   menu_name: main
   url: internal:/content/bibliography
-  weight: 50
+  weight: 60
 cogs_core.cited:
   title: 'Works Cited'
   description: 'Works Cited'
   parent: main
   menu_name: main
   url: internal:/content/works-cited
-  weight: 60
+  weight: 70
 cogs_core.contact:
   title: 'Contact'
   description: 'Contact'
@@ -54,4 +54,4 @@ cogs_core.contact:
   menu_name: main
   route_name: entity.contact_form.canonical
   route_parameters: { contact_form: 'website_feedback' }
-  weight: 70
+  weight: 80
