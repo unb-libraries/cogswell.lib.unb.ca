@@ -47,11 +47,10 @@ cogs_core.cited:
   menu_name: main
   route_name: cogs_core.works-cited
   weight: 60
-cogs_core.contact:
-  title: 'Contact'
-  description: 'Contact'
+cogs_core.cited2:
+  title: 'Works Cited 2'
+  description: 'Works Cited'
   parent: main
   menu_name: main
-  route_name: entity.contact_form.canonical
-  route_parameters: { contact_form: 'website_feedback' }
+  url: internal:/content/works-cited
   weight: 70
