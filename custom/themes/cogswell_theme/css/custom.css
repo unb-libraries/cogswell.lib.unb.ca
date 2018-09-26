@@ -30,12 +30,9 @@ form label {
 
 .navbar-default {background-color: #333; border-color: #333;}
 
-.navbar-default .navbar-nav > li > a {color: #fff;}
+.navbar-default li.active a {background-color: #333 !important;}
 
-.navbar-default .is-active:active {
-  color: #ff7800;
-  text-decoration: none !important;
-}
+.navbar-default .navbar-nav > li > a {color: #fff;}
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
   color: #fff;

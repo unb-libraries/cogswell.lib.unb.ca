@@ -10,47 +10,48 @@ cogs_core.p&a:
   description: 'Preface & Acknowledgements'
   parent: main
   menu_name: main
-  route_name: cogs_core.p&a
+  url: internal:/content/preface-acknowledgements
   weight: 20
 cogs_core.bio:
   title: 'Biography'
   description: 'Biography'
   parent: main
   menu_name: main
-  route_name: cogs_core.bio
+  url: internal:/content/biography
   weight: 30
 cogs_core.p&p:
   title: 'Poetry & Poetics'
   description: 'Poetry & Poetics'
   parent: main
   menu_name: main
-  route_name: cogs_core.p&p
+  url: internal:/content/poetry-and-poetics
   weight: 40
 cogs_core.correspondence:
   title: 'Correspondence'
   description: 'Correspondence'
   parent: main
   menu_name: main
-  route_name: cogs_core.correspondence
+  url: internal:/content/correspondence
   weight: 40
 cogs_core.biblio:
   title: 'Bibliography'
   description: 'Bibliography'
   parent: main
   menu_name: main
-  route_name: cogs_core.biblio
-  weight: 60
+  url: internal:/content/bibliography
+  weight: 50
 cogs_core.cited:
   title: 'Works Cited'
   description: 'Works Cited'
   parent: main
   menu_name: main
-  route_name: cogs_core.works-cited
+  url: internal:/content/works-cited
   weight: 60
-cogs_core.cited2:
-  title: 'Works Cited 2'
-  description: 'Works Cited'
+cogs_core.contact:
+  title: 'Contact'
+  description: 'Contact'
   parent: main
   menu_name: main
-  url: internal:/content/works-cited
+  route_name: entity.contact_form.canonical
+  route_parameters: { contact_form: 'website_feedback' }
   weight: 70

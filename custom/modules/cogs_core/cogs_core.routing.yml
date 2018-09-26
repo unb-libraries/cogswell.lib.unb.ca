@@ -2,27 +2,3 @@ cogs_core.home:
   path: '/'
   requirements:
     _permission: 'access content'
-cogs_core.p&a:
-  path: 'content/preface-acknowledgements'
-  requirements:
-    _permission: 'access content'
-cogs_core.bio:
-  path: 'content/biography'
-  requirements:
-    _permission: 'access content'
-cogs_core.p&p:
-  path: 'content/poetry-and-poetics'
-  requirements:
-    _permission: 'access content'
-cogs_core.correspondence:
-  path: 'content/correspondence'
-  requirements:
-    _permission: 'access content'
-cogs_core.biblio:
-  path: 'content/bibliography'
-  requirements:
-    _permission: 'access content'
-cogs_core.works-cited:
-  path: 'content/works-cited'
-  requirements:
-    _permission: 'access content'
