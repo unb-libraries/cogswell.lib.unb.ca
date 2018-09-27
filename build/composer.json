@@ -80,10 +80,12 @@
         "drupal/features": "3.1",
         "drupal/inline_entity_form": "1.0-alpha6",
         "drupal/views_slideshow": "4.6",
+        "drupal/zircon": "1.0-rc1",
         "drush/drush": "^8.1.15",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3",
         "malsup/jquery.cycle": "3.0.3-a",
+        "drupal/google_analytics": "2.3",
         "drupal/bootstrap": "3.13"
     },
     "require-dev": {
