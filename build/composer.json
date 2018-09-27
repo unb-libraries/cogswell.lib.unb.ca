@@ -84,7 +84,6 @@
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3",
         "malsup/jquery.cycle": "3.0.3-a",
-        "drupal/google_analytics": "2.3",
         "drupal/bootstrap": "3.13"
     },
     "require-dev": {
