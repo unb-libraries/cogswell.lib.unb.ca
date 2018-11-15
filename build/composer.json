@@ -85,7 +85,7 @@
         "webmozart/path-util": "^2.3",
         "malsup/jquery.cycle": "3.0.3-a",
         "drupal/google_analytics": "2.3",
-        "drupal/bootstrap": "3.13"
+        "drupal/bootstrap": "3.14"
     },
     "require-dev": {
         "unb-libraries/drupal-development-libraries": "^8.0.0"
