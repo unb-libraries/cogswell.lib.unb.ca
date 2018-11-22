@@ -69,7 +69,6 @@
     "require": {
         "drupal/bootstrap": "3.15",
         "drupal/config_update": "1.1",
-        "drupal/console": "~1.0",
         "drupal/core": "8.6.3",
         "drupal/features": "3.1",
         "drupal/google_analytics": "2.3",
