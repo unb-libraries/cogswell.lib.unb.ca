@@ -71,7 +71,7 @@
         "drupal/config_update": "1.1",
         "drupal/core": "8.6.7",
         "drupal/features": "3.1",
-        "drupal/google_analytics": "2.3",
+        "drupal/google_analytics": "2.4",
         "drupal/inline_entity_form": "1.0-alpha6",
         "drupal/views_slideshow": "4.6",
         "malsup/jquery.cycle": "3.0.3-a",
