@@ -73,6 +73,7 @@
         "drupal/core": "8.7.8",
         "drupal/features": "3.1",
         "drupal/google_analytics": "2.4",
+        "drupal/health_check": "1.1",
         "drupal/inline_entity_form": "1.0-alpha6",
         "drupal/redis": "1.1",
         "drupal/search_api": "1.14",
