@@ -74,6 +74,7 @@
         "drupal/features": "3.1",
         "drupal/google_analytics": "2.4",
         "drupal/inline_entity_form": "1.0-alpha6",
+        "drupal/redis": "1.1",
         "drupal/search_api": "1.14",
         "drupal/search_api_autocomplete": "1.2",
         "drupal/search_api_solr": "3.4",
