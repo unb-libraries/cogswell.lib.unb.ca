@@ -1,4 +1,4 @@
-![cogswell.lib.unb.ca screenshot](https://github.com/unb-libraries/cogswell.lib.unb.ca/raw/prod/screenshot.png "cogswell.lib.unb.ca screenshot")
+![cogswell.lib.unb.ca screenshot](https://github.com/unb-libraries/cogswell.lib.unb.ca/raw/prod/.dockworker/screenshot.png "cogswell.lib.unb.ca screenshot")
 # [cogswell.lib.unb.ca](https://cogswell.lib.unb.ca/) : Instance Repository
 [![Build Status](https://travis-ci.com/unb-libraries/cogswell.lib.unb.ca.svg?branch=prod)](https://travis-ci.com/unb-libraries/cogswell.lib.unb.ca) [![GitHub license](https://img.shields.io/github/license/unb-libraries/cogswell.lib.unb.ca)](https://github.com/unb-libraries/cogswell.lib.unb.ca/blob/dev/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/unb-libraries/cogswell.lib.unb.ca)
 
