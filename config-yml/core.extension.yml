@@ -46,7 +46,7 @@ module:
   views_ui: 0
   menu_link_content: 1
   views: 10
-  cogswell: 1000
+  minimal: 1000
 theme:
   stable: 0
   classy: 0
@@ -54,6 +54,6 @@ theme:
   seven: 0
   cogswell_theme: 0
   bootstrap: 0
-profile: cogswell
+profile: minimal
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
