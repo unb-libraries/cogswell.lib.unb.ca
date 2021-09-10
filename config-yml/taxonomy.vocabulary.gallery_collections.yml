@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Gallery collections'
 vid: gallery_collections
 description: 'Groups of rich media galleries'
-hierarchy: 0
 weight: 0
