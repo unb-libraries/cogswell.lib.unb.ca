@@ -10,8 +10,8 @@ field_name: field_license
 entity_type: file
 type: list_string
 settings:
-  allowed_values_function: _media_gallery_get_field_license_values
   allowed_values: {  }
+  allowed_values_function: _media_gallery_get_field_license_values
 module: options
 locked: false
 cardinality: 1

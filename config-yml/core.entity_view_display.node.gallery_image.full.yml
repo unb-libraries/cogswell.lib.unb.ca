@@ -15,13 +15,15 @@ bundle: gallery_image
 mode: full
 content:
   field_main_image:
-    weight: 102
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 102
     region: content
   links:
     weight: 100

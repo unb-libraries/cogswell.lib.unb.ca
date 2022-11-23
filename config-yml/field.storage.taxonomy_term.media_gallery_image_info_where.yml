@@ -10,8 +10,8 @@ field_name: media_gallery_image_info_where
 entity_type: taxonomy_term
 type: list_string
 settings:
-  allowed_values_function: _media_gallery_get_image_info_placement_values
   allowed_values: {  }
+  allowed_values_function: _media_gallery_get_image_info_placement_values
 module: options
 locked: false
 cardinality: 1
