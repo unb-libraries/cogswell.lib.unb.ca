@@ -75,7 +75,7 @@
     }
   ],
   "require": {
-    "drupal/bootstrap": "3.27",
+    "drupal/bootstrap": "3.25",
     "drupal/core": "9.5.7",
     "drupal/google_analytics": "2.5",
     "drupal/health_check": "1.3",
