@@ -1,28 +1,71 @@
 dockworker:
-  version: '5'
+  version: '6'
   application:
-    name: cogswell.lib.unb.ca
-    finish_marker: '99_zz_notify_user_URI'
-    project_prefix: COGS
-    upstream_images:
-      - ghcr.io/unb-libraries/drupal:9.x-2.x-unblib
-    uuid: 3086
-  deployment:
-    environments:
+    name: Fred Cogswell - The Many-Dimensioned Self
+    uri: https://cogswell.lib.unb.ca
+    description: >
+      This digital volume is both a Selected Works of Cogswell 
+      and a Critical Appraisal of his creative and cultural work. As such, it offers a broad entry to 
+      and assessment of the work of one of Canada’s most important literary modernists.
+    topics:
+      - literature
+      - modernism
+      - research
+    identifiers:
+      id: cogswell.lib.unb.ca
+      slug: cogswell-lib-unb-ca
+      short_slug: cogswell
+      uuid: 3086
+    framework:
+      name: Drupal
+      version: 10
+      startup_finished_marker: '99_startup_sequence_complete'
+      endpoint:
+        name: http
+        port: 80
+        readiness_timeout: 15
+    license:
+      license: MIT
+      holder: University of New Brunswick Libraries
+    shell:
+      path: /bin/sh
+  endpoints:
+    env:
       - dev
       - prod
-    workflow:
-      source: dockworker-drupal
-      type: deployment-workflow
-  drupal:
-    version: 9
-  github:
-    repo: cogswell.lib.unb.ca
-    owner: unb-libraries
-  image:
-    push_branches:
-      - dev
-      - prod
-    name: ghcr.io/unb-libraries/cogswell.lib.unb.ca
-    date_tag_image: true
-    repository: ghcr
+    deployments:
+      cogswell-lib-unb-ca:
+        default: true
+        managed: true
+        name: cogswell-lib-unb-ca
+      drupal-mysql-lib-unb-ca:
+        managed: false
+        name: mysql
+      drupal-redis-lib-unb-ca:
+        managed: false
+        name: redis
+      drupal-solr-lib-unb-ca:
+        managed: false
+        name: solr
+  workflows:
+    vcs:
+      type: github
+      owner: unb-libraries
+      name: cogswell.lib.unb.ca
+    jira:
+      project_keys:
+        - COGS
+    image:
+      name: ghcr.io/unb-libraries/cogswell.lib.unb.ca
+      parent: ghcr.io/unb-libraries/drupal:10.x-1.x-unblib
+      repository: GitHub
+      push-branches:
+        - dev
+        - prod
+    e2e_tests:
+        - id: core
+          frequency: '*/5 * * * *'
+          source_files:
+            - .dockworker/tests/e2e/cogswell.lib.unb.ca.yml
+          namespaces:
+            - prod

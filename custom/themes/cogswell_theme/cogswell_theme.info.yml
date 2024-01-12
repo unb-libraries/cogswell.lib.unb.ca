@@ -4,7 +4,7 @@ description: "For cogswell.lib.unb.ca - Sub-themed from Zircon."
 base theme: bootstrap
 package: Custom
 core: 8.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 
 libraries:
   - cogswell_theme/global-styling
