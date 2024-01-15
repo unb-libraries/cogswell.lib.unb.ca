@@ -46,8 +46,8 @@ ol > li > h3 {
 .navbar-default .navbar-nav > li > a {color: #fff;}
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-  color: #fff;
-  background-color: #666;
+  color: #fff !important;
+  background-color: #666 !important;
   text-decoration: none !important;
 }
 
@@ -70,7 +70,7 @@ ol > li > h3 {
 
 /* re-color links on hover, focus, etc */
 a, a:visited, #main .container .content .views-row:hover h2 a, #main .container .content .views-row:focus h2 a {
-  color: var(--cog-orange);
+  color: var(--cog-orange) !important;
 }
 
 a:hover, a:focus, a:focus-within, a:active,
@@ -78,7 +78,7 @@ a:hover, a:focus, a:focus-within, a:active,
 #main .container .content .views-row:hover h2 a, #main .container .content .views-row:focus h2 a:focus,
 #main .container .content .views-row:hover h2 a, #main .container .content .views-row:focus h2 a:focus-within,
 #main .container .content .views-row:hover h2 a, #main .container .content .views-row:focus h2 a:active {
-  color: var(--cog-dark-orange);
+  color: var(--cog-dark-orange) !important;
   text-decoration: underline !important;
 }
 
@@ -90,6 +90,9 @@ a:hover, a:focus, a:focus-within, a:active,
 /* Slideshow */
 #block-views-block-slideshow-block-1-2 {
   margin-bottom: 20px;
+}
+#views_slideshow_controls_text_slideshow-block_1 {
+  visibility: hidden;
 }
 
 /* Hide search help */
