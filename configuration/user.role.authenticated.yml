@@ -1,7 +1,12 @@
 uuid: 42972feb-1642-44c9-9a4a-e3fceda10ab8
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - contact
+    - search
+    - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
 id: authenticated
@@ -13,10 +18,5 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'post comments'
-  - 'save draft'
   - 'search content'
   - 'skip comment approval'
-  - 'subscribe to comments'
-  - 'use text format filtered_html'
-  - 'view addthis'
-  - 'view files'
