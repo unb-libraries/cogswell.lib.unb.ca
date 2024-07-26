@@ -68,6 +68,8 @@ services:
       - "4086:8025"
     networks:
       - cogswell.lib.unb.ca
+    profiles:
+      - mailhog
 networks:
   cogswell.lib.unb.ca:
     name: cogswell.lib.unb.ca
