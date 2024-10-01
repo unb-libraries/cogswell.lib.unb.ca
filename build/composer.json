@@ -16,8 +16,9 @@
       "cweagans/composer-patches": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "drupal/core-composer-scaffold": true,
-      "phpstan/extension-installer": true
-   },
+      "phpstan/extension-installer": true,
+      "php-http/discovery": true
+    },
     "discard-changes": true,
     "preferred-install": {
       "*": "dist"
