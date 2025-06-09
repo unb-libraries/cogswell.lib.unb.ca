@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_main_slideshow_image
-    - image.style.banner_960x210_
+    - image.style.banner_1400x240
     - node.type.slideshow_image
   module:
     - image
@@ -80,7 +80,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: banner_960x210_
+            image_style: banner_1400x240
             image_loading:
               attribute: lazy
           group_column: ''
