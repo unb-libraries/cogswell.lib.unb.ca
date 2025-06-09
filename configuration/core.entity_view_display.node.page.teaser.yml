@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_attached_pdf
     - node.type.page
   module:
     - text
@@ -27,3 +29,4 @@ content:
     region: content
 hidden:
   comment_node_page: true
+  field_attached_pdf: true

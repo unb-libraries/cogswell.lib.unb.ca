@@ -6,3 +6,4 @@ name: 'Gallery collections'
 vid: gallery_collections
 description: 'Groups of rich media galleries'
 weight: 0
+new_revision: false

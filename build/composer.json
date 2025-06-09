@@ -17,7 +17,8 @@
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "drupal/core-composer-scaffold": true,
       "phpstan/extension-installer": true,
-      "php-http/discovery": true
+      "php-http/discovery": true,
+      "tbachert/spi": true
     },
     "discard-changes": true,
     "preferred-install": {
@@ -103,6 +104,7 @@
     "drupal/core-recommended": "^10",
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^1",
+    "drupal/jquery_ui": "^1",
     "drupal/quickedit": "^1",
     "drupal/rdf": "^2",
     "drupal/redis": "^1",

@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.comment_node_page.default
     - field.field.node.page.body
     - field.field.node.page.comment_node_page
+    - field.field.node.page.field_attached_pdf
     - node.type.page
   module:
     - comment
@@ -20,7 +22,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
   comment_node_page:
     type: comment_default
@@ -29,9 +31,12 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
-    weight: 20
+    weight: 0
     region: content
   links:
-    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
     region: content
-hidden: {  }
+hidden:
+  field_attached_pdf: true
