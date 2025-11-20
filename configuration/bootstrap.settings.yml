@@ -14,5 +14,4 @@ logo:
   path: ''
   url: ''
   use_default: false
-schemas:
-  bootstrap: 8000
+  
