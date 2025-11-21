@@ -93,9 +93,40 @@
         "version": "3.0.3-a"
       },
       "type": "package"
+    },
+    {
+      "package": {
+        "dist": {
+          "type": "zip",
+          "url": "https://github.com/briancherne/jquery-hoverIntent/archive/v1.10.2.zip"
+        },
+        "extra": {
+          "installer-name": "jquery.hover-intent"
+        },
+        "name": "jquery/hoverintent",
+        "type": "drupal-library",
+        "version": "1.10.2"
+      },
+      "type": "package"
+    },
+    {
+      "package": {
+        "dist": {
+          "type": "file",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.js"
+        },
+        "name": "cdnjs/json2",
+        "require": {
+          "composer/installers": "^2"
+        },
+        "type": "drupal-library",
+        "version": "1.0"
+      },
+      "type": "package"
     }
   ],
   "require": {
+    "cdnjs/json2": "^1",
     "drupal/bootstrap": "^3",
     "drupal/color": "^2",
     "drupal/core": "^11",
@@ -109,6 +140,7 @@
     "drupal/redis": "^1",
     "drupal/simple_sitemap": "^4",
     "drupal/views_slideshow": "^5",
+    "jquery/hoverintent": "^1",
     "malsup/jquery.cycle": "3.0.3-a",
     "unb-libraries/composer-drupal-scaffold": "^11.x-dev"
   },
