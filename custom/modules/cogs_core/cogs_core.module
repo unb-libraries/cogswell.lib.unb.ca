@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * cogs_core.module
+ */
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * Attach the jQuery.isFunction polyfill only on the front page so it loads
+ * before other libraries that may rely on $.isFunction (e.g. Views Slideshow).
+ */
+function cogs_core_page_attachments(array &$attachments) {
+  // Use the path.matcher service to determine front page.
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    $attachments['#attached']['library'][] = 'cogs_core/jquery_isfunction_polyfill';
+  }
+}

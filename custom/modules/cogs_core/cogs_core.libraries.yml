@@ -1,0 +1,6 @@
+jquery_isfunction_polyfill:
+  version: 1.0
+  js:
+    js/jquery_isfunction_polyfill.js: {}
+  dependencies:
+    - core/jquery
