@@ -1,0 +1,10 @@
+swiper:
+  version: 9.x
+  css:
+    theme:
+      /vendor/npm-asset/swiper/swiper-bundle.min.css: {}
+  js:
+    /vendor/npm-asset/swiper/swiper-bundle.min.js: {}
+    js/swiper-init.js: {}
+  dependencies:
+    - core/drupal

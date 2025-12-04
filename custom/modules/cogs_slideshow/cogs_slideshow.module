@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function cogs_slideshow_views_pre_render(ViewExecutable $view) {
+  // Target this particular view/display (replace with real ids).
+  if ($view->id() === 'slideshow' && $view->current_display === 'block_1') {
+    if (isset($view->element) && is_array($view->element)) {
+      // Attach the swiper library.
+      $view->element['#attached']['library'][] = 'cogs_slideshow/swiper';
+
+      // Ensure attributes exist and add the swiper container class we look for in JS.
+      if (!isset($view->element['#attributes'])) {
+        $view->element['#attributes'] = [];
+      }
+      if (!isset($view->element['#attributes']['class'])) {
+        $view->element['#attributes']['class'] = [];
+      }
+      //$view->element['#attributes']['class'][] = 'swiper-slider';
+
+      // Optional: pass options to JS (enable fade here).
+      $options = [
+        'effect' => 'fade',
+        'speed' => '5000',
+        'autoplay' => TRUE,
+        'autoplaySpeed' => 7000,
+        'pagination' => FALSE,
+        'navigation' => FALSE,
+      ];
+      $view->element['#attributes']['data-swiper-options'] = json_encode($options);
+    }
+  }
+}

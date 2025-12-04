@@ -10,7 +10,6 @@ dependencies:
     - image
     - node
     - user
-    - views_slideshow
 id: slideshow
 label: Slideshow
 module: views
@@ -180,41 +179,11 @@ display:
         operator: AND
         groups: {  }
       style:
-        type: slideshow
+        type: default
         options:
+          grouping: {  }
           row_class: ''
           default_row_class: true
-          slideshow_skin: default
-          slideshow_type: views_slideshow_cycle
-          widgets:
-            top:
-              views_slideshow_controls:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-              views_slideshow_pager:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_pager_fields
-            bottom:
-              views_slideshow_controls:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-              views_slideshow_pager:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_pager_fields
       row:
         type: fields
       query:
