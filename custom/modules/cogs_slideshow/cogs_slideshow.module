@@ -19,8 +19,7 @@ function cogs_slideshow_views_pre_render(ViewExecutable $view) {
       if (!isset($view->element['#attributes']['class'])) {
         $view->element['#attributes']['class'] = [];
       }
-      //$view->element['#attributes']['class'][] = 'swiper-slider';
-
+      
       // Optional: pass options to JS (enable fade here).
       $options = [
         'effect' => 'fade',

@@ -3,7 +3,7 @@
 
   Drupal.behaviors.cogsSlideshowSwiper = {
     attach: function (context, settings) {
-      // Add swiper-slider class to view-content if needed.
+      // Add swiper-slider class to target container element. Immediate decendants will be slides.
       var viewContent = context.querySelector('#block-views-block-slideshow-block-1-2 .view-content');
       if (viewContent && !viewContent.classList.contains('swiper-slider')) {
         viewContent.classList.add('swiper-slider');
