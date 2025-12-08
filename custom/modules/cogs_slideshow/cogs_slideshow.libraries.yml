@@ -3,6 +3,7 @@ swiper:
   css:
     theme:
       /vendor/npm-asset/swiper/swiper-bundle.min.css: {}
+      css/swiper-fouc-fix.css: {}
   js:
     /vendor/npm-asset/swiper/swiper-bundle.min.js: {}
     js/swiper-init.js: {}

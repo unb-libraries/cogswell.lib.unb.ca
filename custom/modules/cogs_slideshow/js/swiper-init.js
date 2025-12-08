@@ -3,7 +3,7 @@
 
   Drupal.behaviors.cogsSlideshowSwiper = {
     attach: function (context, settings) {
-      // Add swiper-slider class to target container element. Immediate decendants will be slides.
+      // Add swiper-slider class to view-content if needed.
       var viewContent = context.querySelector('#block-views-block-slideshow-block-1-2 .view-content');
       if (viewContent && !viewContent.classList.contains('swiper-slider')) {
         viewContent.classList.add('swiper-slider');
@@ -52,7 +52,7 @@
           }
         }
 
-        // Ensure navigation/pagination DOM exists (create if missing) so controls work for fade and slide
+        // Ensure navigation/pagination DOM exists (create if missing)
         var paginationEl = container.querySelector('.swiper-pagination');
         if (!paginationEl && options.pagination !== false) {
           paginationEl = document.createElement('div');
@@ -77,7 +77,7 @@
         // Determine effect
         var effect = (options.effect && String(options.effect).toLowerCase() === 'fade') ? 'fade' : 'slide';
 
-        // Normalize autoplay as before
+        // Normalize autoplay (kept from your version)
         function normalizeAutoplay(opts) {
           var result = false;
           if (opts.autoplay === false) {
@@ -132,13 +132,12 @@
           cfg[k] = options[k];
         }
 
-        // Normalize and set autoplay on cfg
         cfg.autoplay = normalizeAutoplay(options);
         if (options.autoplay === false) {
           cfg.autoplay = false;
         }
 
-        // Set transition speed (milliseconds). Swiper uses `speed`.
+        // Set transition speed
         var resolvedSpeed = undefined;
         if (options.speed !== undefined) {
           resolvedSpeed = Number(options.speed) || undefined;
@@ -147,7 +146,6 @@
         }
         cfg.speed = resolvedSpeed !== undefined ? resolvedSpeed : 600;
 
-        // enforce fade constraints
         if (String(cfg.effect).toLowerCase() === 'fade') {
           cfg.slidesPerView = 1;
           cfg.fadeEffect = cfg.fadeEffect || { crossFade: true };
@@ -156,7 +154,27 @@
           }
         }
 
-        // ensure Swiper exists
+        // Add hooks so we reveal the slider only when ready.
+        cfg.on = cfg.on || {};
+        // Add init hook (fires when Swiper initialized)
+        var existingInit = cfg.on.init;
+        cfg.on.init = function () {
+          // call any existing handler
+          if (typeof existingInit === 'function') {
+            try { existingInit.apply(this, arguments); } catch (e) { console.warn(e); }
+          }
+          // add class to reveal slider
+          container.classList.add('swiper-ready');
+        };
+        // Also prefer imagesReady event to reveal after images loaded
+        var existingImagesReady = cfg.on.imagesReady;
+        cfg.on.imagesReady = function () {
+          if (typeof existingImagesReady === 'function') {
+            try { existingImagesReady.apply(this, arguments); } catch (e) { console.warn(e); }
+          }
+          container.classList.add('swiper-ready');
+        };
+
         if (typeof Swiper === 'undefined') {
           console.error('Swiper not found. Make sure swiper-bundle.min.js is loaded in your library.');
           return;
@@ -167,6 +185,8 @@
           new Swiper(container, cfg);
         } catch (err) {
           console.error('Swiper init error for', container, err);
+          // In case of error, reveal the content so users are not stuck with hidden content.
+          container.classList.add('swiper-ready');
         }
       });
     }
