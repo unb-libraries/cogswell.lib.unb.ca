@@ -1,7 +1,7 @@
 FROM ghcr.io/unb-libraries/drupal:11.x-1.x-unblib
 
 # Install additional OS packages.
-ENV ADDITIONAL_OS_PACKAGES="postfix php84-ldap php84-pecl-redis php84-xmlreader php84-zip"
+ENV ADDITIONAL_OS_PACKAGES="postfix php${PHP_VERSION}-ldap php${PHP_VERSION}-pecl-redis php${PHP_VERSION}-xmlreader php${PHP_VERSION}-zip"
 ENV DRUPAL_SITE_ID="cogswell"
 ENV DRUPAL_SITE_URI="cogswell.lib.unb.ca"
 ENV DRUPAL_SITE_UUID="ac1ac8fe-3818-46e4-92b1-b4b64ac6e0c3"
