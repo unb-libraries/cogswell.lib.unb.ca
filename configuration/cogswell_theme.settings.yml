@@ -10,4 +10,3 @@ favicon:
   use_default: false
   path: 'public://favicon.png'
   mimetype: image/png
-

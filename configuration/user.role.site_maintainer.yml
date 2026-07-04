@@ -20,7 +20,6 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - views_ui
 id: site_maintainer
 label: 'site maintainer'
 weight: 3
@@ -54,7 +53,6 @@ permissions:
   - 'administer themes'
   - 'administer url aliases'
   - 'administer users'
-  - 'administer views'
   - 'bypass node access'
   - 'cancel account'
   - 'change own username'
