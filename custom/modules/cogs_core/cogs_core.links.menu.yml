@@ -52,6 +52,5 @@ cogs_core.contact:
   description: 'Contact'
   parent: main
   menu_name: main
-  route_name: entity.contact_form.canonical
-  route_parameters: { contact_form: 'website_feedback' }
+  class: 'Drupal\cogs_core\Plugin\Menu\MailtoMenuLink'
   weight: 80

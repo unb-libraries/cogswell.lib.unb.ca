@@ -6,7 +6,12 @@ features:
 logo:
   use_default: false
   path: ''
+  url: ''
 favicon:
   use_default: false
   path: 'public://favicon.png'
   mimetype: image/png
+  url: ''
+schemas:
+  bootstrap: 8000
+  cogswell_theme: 8000

@@ -134,6 +134,7 @@
     "drupal/core": "^11",
     "drupal/core-composer-scaffold": "^11",
     "drupal/core-recommended": "^11",
+    "drupal/file_replace": "^1",
     "drupal/google_analytics": "^4",
     "drupal/health_check": "^3",
     "drupal/jquery_ui": "^1",
