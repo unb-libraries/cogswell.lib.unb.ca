@@ -9,7 +9,6 @@ dependencies:
   module:
     - block
     - comment
-    - contact
     - contextual
     - file_replace
     - filter
@@ -33,13 +32,10 @@ permissions:
   - 'access contextual links'
   - 'access site in maintenance mode'
   - 'access site reports'
-  - 'access site-wide contact form'
   - 'access toolbar'
-  - 'access user contact forms'
   - 'access user profiles'
   - 'administer blocks'
   - 'administer comments'
-  - 'administer contact forms'
   - 'administer content types'
   - 'administer filters'
   - 'administer google analytics'
