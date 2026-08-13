@@ -11,6 +11,7 @@ dependencies:
     - comment
     - contact
     - contextual
+    - file_replace
     - filter
     - google_analytics
     - image
@@ -70,6 +71,7 @@ permissions:
   - 'edit own comments'
   - 'edit own page content'
   - 'post comments'
+  - 'replace files'
   - 'search content'
   - 'select account cancellation method'
   - 'skip comment approval'

@@ -7,6 +7,7 @@ dependencies:
     - node.type.page
   module:
     - comment
+    - file_replace
     - node
     - path
     - search
@@ -34,6 +35,7 @@ permissions:
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
+  - 'replace files'
   - 'use advanced search'
   - 'view own unpublished content'
   - 'view the administration theme'
