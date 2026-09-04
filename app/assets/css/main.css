@@ -1,0 +1,160 @@
+@import "tailwindcss";
+
+/* Orange links on white, dark grey navbar. */
+@theme {
+  --color-page: #ffffff;
+  --color-content: #ffffff;
+  --color-navbar: #333333;
+  --color-navbar-hover: #666666;
+  --color-link: #ff7800;
+  --color-link-hover: #803c00;
+  --color-rule: #dddddd;
+  /* the navbar toggle's icon bars */
+  --color-toggle-bar: #888888;
+  --color-muted: #666666;
+  --font-header: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    /* Reserve the scrollbar gutter on every page, so navigating between a page
+       that scrolls and one that does not no longer shifts the centred column. */
+    scrollbar-gutter: stable;
+  }
+
+  a {
+    @apply text-link;
+  }
+
+  a:hover {
+    @apply text-link-hover underline;
+  }
+
+  h1 {
+    @apply text-3xl font-heading mb-4 pb-2 border-b border-rule;
+  }
+
+  h2 {
+    @apply text-2xl font-heading mb-4;
+  }
+
+  h3 {
+    @apply text-xl font-heading mb-4;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  ul {
+    @apply list-disc pl-8 mb-4;
+  }
+
+  embed {
+    @apply mb-4;
+  }
+
+  body {
+    @apply bg-page font-body text-[15px]/relaxed;
+  }
+}
+
+@layer components {
+  /* --- book prose ------------------------------------------------------ */
+  .book-body {
+    @apply mb-4;
+  }
+
+  /* Epigraphs open most chapters, set right-aligned as on the print page. */
+  .book-body .align-right {
+    @apply text-right;
+  }
+
+  /* Block quotations, and the indented entries of the chapter contents. */
+  .book-body .indent {
+    @apply pl-10;
+  }
+
+  .book-body .indent-2 {
+    @apply pl-20;
+  }
+
+  /* --- footnotes ------------------------------------------------------- */
+  .footnotes {
+    @apply mt-8 text-sm text-muted;
+  }
+
+  .footnotes hr {
+    @apply w-1/3 border-t border-rule mb-4;
+  }
+
+  .footnote-ref a {
+    @apply no-underline;
+  }
+
+  .footnote {
+    /* hanging indent, so the number sits clear of the note */
+    @apply pl-8 -indent-8;
+  }
+
+  .footnote-backref {
+    @apply no-underline mr-1;
+  }
+
+  /* --- bibliography ---------------------------------------------------- */
+  .citation {
+    @apply pl-8 -indent-8;
+  }
+
+  /* --- poems ----------------------------------------------------------- */
+  .poem {
+    @apply mb-4;
+  }
+
+  .stanza {
+    @apply mb-6;
+  }
+
+  /* Verse lines are set as blocks so long lines wrap with a hanging indent
+     rather than silently re-flowing into the next line of the poem. */
+  .line {
+    @apply block pl-8 -indent-8;
+  }
+
+  .poem-attribution {
+    @apply text-sm text-muted mt-8 pt-4 border-t border-rule;
+  }
+
+  /* --- poem index ------------------------------------------------------ */
+  .poem-index__book {
+    @apply italic mt-6 mb-2;
+  }
+
+  .poem-index__poems {
+    @apply list-none pl-10 mb-0;
+  }
+
+  .poem-index__poems li {
+    @apply mb-2;
+  }
+
+  /* --- letters gallery ------------------------------------------------- */
+  .letters-grid {
+    @apply grid grid-cols-[repeat(auto-fill,minmax(170px,1fr))] gap-6 list-none pl-0 mb-4;
+  }
+
+  .letters-grid figcaption {
+    @apply text-sm mt-2;
+  }
+
+  .letters-grid img {
+    @apply h-[220px] w-auto shadow;
+  }
+
+  /* --- pager ----------------------------------------------------------- */
+  .book-pager {
+    @apply flex justify-between items-baseline gap-4 list-none pl-0 mb-4 mt-8 border-t border-rule pt-4 font-header text-sm;
+  }
+}

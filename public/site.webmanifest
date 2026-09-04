@@ -1,0 +1,16 @@
+{
+  "name": "Fred Cogswell: The Many-Dimensioned Self",
+  "short_name": "Fred Cogswell",
+  "description": "A Selected Works and Critical Appraisal of Fred Cogswell, by Tony Tremblay",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
+  "display": "standalone"
+}

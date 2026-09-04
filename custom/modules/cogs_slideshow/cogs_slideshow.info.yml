@@ -1,6 +1,0 @@
-name: Cogswell Slideshow
-type: module
-description: Slideshow functionality extension for cogswell.lib.unb.ca
-core: 8.x
-core_version_requirement: ^9 || ^10 || ^11
-package: Cogswell Custom Modules
