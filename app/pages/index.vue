@@ -1,22 +1,4 @@
 <script setup>
-// Top-level entries for the contents list; the rest are reached from these and
-// from the pager.
-const chapters = [
-  '/book/preface-acknowledgements',
-  '/book/biography',
-  '/book/poetry-and-poetics',
-  '/book/correspondence',
-  '/book/bibliography',
-  '/book/works-cited',
-]
-
-const { data: contents } = await useAsyncData('contents', () =>
-  queryCollection('book')
-    .where('path', 'IN', chapters)
-    .order('stem', 'ASC')
-    .select('path', 'title', 'navTitle')
-    .all())
-
 useHead({ title: 'Home' })
 </script>
 
@@ -40,7 +22,7 @@ useHead({ title: 'Home' })
     <embed
       src="/files/cogswell.pdf#view=FitV&amp;zoom=page-height"
       width="100%"
-      height="600"
+      height="800"
       type="application/pdf"
       class="shadow-md"
     >
@@ -48,14 +30,6 @@ useHead({ title: 'Home' })
       The volume may be read online above, or downloaded as a
       <a href="/files/cogswell.pdf">PDF</a>.
     </p>
-    <h2>Contents</h2>
-    <ul>
-      <li v-for="entry in contents" :key="entry.path">
-        <NuxtLink :to="entry.path">
-          {{ entry.navTitle ?? entry.title }}
-        </NuxtLink>
-      </li>
-    </ul>
     <p>
       <NuxtLink to="/copyright">
         Copyright and Citation Information
