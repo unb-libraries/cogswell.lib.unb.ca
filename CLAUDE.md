@@ -89,6 +89,8 @@ than Conventional Commits.
   (`/files/cogswell.pdf`, `/images/letters/thumbs/webb1.jpg`). Letter thumbnails and the
   1400×240 banners are committed derivatives, because the site is served by static nginx
   with no image server.
+- **Analytics**: stock GA4 gtag snippet inlined in `app.head.script` in `nuxt.config.ts`
+  (property `G-Q4ETW7QZW0`, carried over from Drupal). See README's Analytics section.
 
 ## Local development
 
