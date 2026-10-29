@@ -3,7 +3,7 @@ name: Update cogswell.lib.unb.ca
 on:
   workflow_dispatch:
   schedule:
-    - cron: '25 5 * * 1,4'
+    - cron: '25 5 1 * *'
 
 jobs:
   update:
