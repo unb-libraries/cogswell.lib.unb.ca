@@ -109,7 +109,7 @@ than Conventional Commits.
   chart names for a cold start.
 - **`Dockerfile`**: `base` is pure toolchain (no `COPY`, so it stays cached); `build`
   installs from the manifests *before* copying the rest, so editing `content/` does not
-  reinstall `node_modules`; the final stage is `ghcr.io/unb-libraries/nuxt-ssg:3.23.x`,
+  reinstall `node_modules`; the final stage is `ghcr.io/unb-libraries/nuxt-ssg:3.24.x`,
   which carries the nginx config — `try_files`, the `/health` endpoint the chart's probes
   require, gzip, and the asset cache. There is no per-repo nginx config.
 - **The build fails on the silent-pager failure below.** `pnpm run generate` is piped through
